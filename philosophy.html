@@ -3,78 +3,77 @@
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Philosophy — Ahwad Modest Fashion</title>
-<meta name="description" content="The four principles behind Ahwad modest fashion — no compromise, every occasion, her identity, and quality first. Why we design the way we do for Muslim women."/>
+<meta name="description" content="Four principles behind Ahwad modest fashion — no compromise, every occasion, her identity, and quality first."/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://ahwad.com/philosophy.html"/>
 <link rel="stylesheet" href="style.css"/>
 <style>
 .phi-main{padding:var(--sp) var(--px);background:var(--bg);display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,7vw,8rem);align-items:start}
-.phi-left h2{font-family:var(--fS);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;line-height:1.15;color:var(--sage);margin-bottom:1.8rem}
-.phi-left h2 em{font-style:italic;color:var(--rose)}
-.phi-left p{font-family:var(--fB);font-weight:300;font-size:clamp(.85rem,1.2vw,.93rem);line-height:2.05;color:var(--sage2);margin-bottom:1.2rem;max-width:440px}
+.phi-left h2{font-family:var(--fS);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:1.8rem}
+.phi-left h2 em{font-style:italic;color:var(--teal)}
+.phi-left p{font-family:var(--fB);font-weight:300;font-size:clamp(.88rem,1.2vw,.96rem);line-height:2.05;color:var(--ink3);margin-bottom:1.2rem;max-width:440px}
 .phi-cta{margin-top:2.5rem;display:flex;gap:1.1rem;flex-wrap:wrap}
 .phi-items{display:flex;flex-direction:column;padding-top:clamp(1rem,3vw,2rem)}
 .phi-item{padding:2rem 0;border-bottom:1px solid var(--bg3);display:grid;grid-template-columns:2.8rem 1fr;gap:1.3rem;align-items:start;transition:padding-left .3s;position:relative;cursor:default}
 .phi-item:first-child{border-top:1px solid var(--bg3)}
 .phi-item:hover{padding-left:.4rem}
-.phi-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1.5px;background:var(--rose);transform:scaleY(0);transform-origin:bottom;transition:transform .4s ease}
+.phi-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--teal2);transform:scaleY(0);transform-origin:bottom;transition:transform .4s ease}
 .phi-item:hover::before{transform:scaleY(1)}
-.phi-n{font-family:var(--fS);font-size:2rem;font-weight:300;font-style:italic;color:var(--rose);opacity:.22;line-height:1.1;transition:opacity .3s}
-.phi-item:hover .phi-n{opacity:.5}
-.phi-t h3{font-family:var(--fD);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.45rem}
-.phi-t p{font-family:var(--fB);font-weight:300;font-size:.87rem;line-height:1.85;color:var(--sage2);margin-bottom:.75rem;transition:color .3s}
-.phi-item:hover .phi-t p{color:var(--sage)}
-.phi-quote{font-family:var(--fS);font-style:italic;font-size:.9rem;color:var(--rose);opacity:.5;border-left:1px solid var(--rose2);padding-left:.8rem;line-height:1.6;display:block}
+.phi-n{font-family:var(--fS);font-size:2rem;font-weight:300;font-style:italic;color:var(--teal);opacity:.22;line-height:1.1;transition:opacity .3s}
+.phi-item:hover .phi-n{opacity:.55}
+.phi-t h3{font-family:var(--fD);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-bottom:.45rem}
+.phi-t p{font-family:var(--fB);font-weight:300;font-size:.92rem;line-height:1.85;color:var(--ink3);margin-bottom:.75rem;transition:color .3s}
+.phi-item:hover .phi-t p{color:var(--ink)}
+.phi-quote{font-family:var(--fS);font-style:italic;font-size:.9rem;color:var(--teal);opacity:.55;border-left:2px solid var(--teal2);padding-left:.8rem;line-height:1.6;display:block}
 @media(max-width:1024px){.phi-main{grid-template-columns:1fr;gap:3rem}}
 </style>
 </head>
 <body class="page-top">
 <nav id="nav" role="navigation" aria-label="Main navigation">
-  <a class="nav-logo" href="index.html" aria-label="Ahwad — Home">AHWAD</a>
+  <a class="nav-logo" href="index.html">AHWAD</a>
   <ul class="nav-links">
     <li><a href="about.html">Our Story</a></li>
     <li><a href="collections.html">Collections</a></li>
     <li><a href="philosophy.html">Philosophy</a></li>
-    <li><a href="waitlist.html" class="nav-pill">Notify Me</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
   </ul>
+  <a class="nav-cta" href="waitlist.html">Notify Me</a>
   <button class="hbg" id="hbg" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 <div class="mob" id="mob" role="dialog" aria-modal="true">
   <a href="about.html" onclick="closeMenu()">Our Story</a>
   <a href="collections.html" onclick="closeMenu()">Collections</a>
   <a href="philosophy.html" onclick="closeMenu()">Philosophy</a>
-  <a href="waitlist.html" onclick="closeMenu()">Notify Me</a>
-  <a href="privacy.html" onclick="closeMenu()" style="font-size:.9rem;opacity:.5">Privacy Policy</a>
+  <a href="privacy.html" onclick="closeMenu()">Privacy</a>
+  <a href="waitlist.html" onclick="closeMenu()" class="mob-cta">Notify Me</a>
 </div>
 <header class="page-hero" aria-labelledby="ph">
-  <div class="page-hero-iso" aria-hidden="true"></div>
   <div class="corner-tl" aria-hidden="true"></div><div class="corner-br" aria-hidden="true"></div>
   <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Philosophy</span></div>
   <h1 id="ph">Modest is not<br/><em>less.</em></h1>
-  <p class="page-hero-sub">Four principles that govern every silhouette, fabric, and design choice we make at Ahwad.</p>
+  <p class="page-hero-sub">Four principles that govern every silhouette, fabric, and design choice at Ahwad.</p>
 </header>
 <div class="mq" aria-hidden="true"><div class="mqt"><span class="mi">No Compromise</span><span class="ms">✦</span><span class="mi">Every Occasion</span><span class="ms">✦</span><span class="mi">Her Identity</span><span class="ms">✦</span><span class="mi">Quality First</span><span class="ms">✦</span><span class="mi">Why Ahwad</span><span class="ms">✦</span><span class="mi">No Compromise</span><span class="ms">✦</span><span class="mi">Every Occasion</span><span class="ms">✦</span><span class="mi">Her Identity</span><span class="ms">✦</span><span class="mi">Quality First</span><span class="ms">✦</span><span class="mi">Why Ahwad</span><span class="ms">✦</span></div></div>
 <main class="phi-main" id="philosophy">
   <div class="phi-left">
     <p class="sl rv">Why Ahwad</p>
     <h2 class="rv d1">It is <em>everything.</em></h2>
-    <p class="rv d2">The Muslim woman has dressed with intention for centuries. Long before modest fashion became a conversation, she was already having it — in the way she moved, covered, and chose what to put on her body every morning.</p>
-    <p class="rv d2">Ahwad gives that ancient, deeply rooted intention a contemporary form. Clothing that speaks her language without asking her to translate herself for anyone.</p>
+    <p class="rv d2">The Muslim woman has dressed with intention for centuries. Ahwad gives that ancient, deeply rooted intention a contemporary form — clothing that speaks her language without asking her to translate herself for anyone.</p>
     <div class="phi-cta rv d3">
-      <a href="waitlist.html" class="btn-sage"><span>Join the Waitlist</span></a>
+      <a href="waitlist.html" class="btn-teal"><span>Join the Waitlist</span></a>
       <a href="collections.html" class="btn-outline">View Collections</a>
     </div>
   </div>
   <div class="phi-items">
-    <article class="phi-item rv d1"><span class="phi-n">01</span><div class="phi-t"><h3>No Compromise on Modesty</h3><p>Full coverage and full elegance — never one at the expense of the other. Modest fashion that never asks you to choose between your faith and looking extraordinary.</p><span class="phi-quote">"She covers because she chooses to. The clothing honours that choice."</span></div></article>
-    <article class="phi-item rv d2"><span class="phi-n">02</span><div class="phi-t"><h3>Every Occasion Covered</h3><p>One wardrobe philosophy, many chapters — formal work, celebrations, Eid, family gatherings, and everything in between. Modest clothing that travels with her day.</p><span class="phi-quote">"A Muslim woman's life is full. Her wardrobe should be too."</span></div></article>
-    <article class="phi-item rv d3"><span class="phi-n">03</span><div class="phi-t"><h3>Rooted in Her Identity</h3><p>Pakistani design language, Middle Eastern reach — modest clothing that speaks to both cultures without flattening either. A shared aesthetic of grace that belongs to her.</p><span class="phi-quote">"Culture is not costume. We design for women who know the difference."</span></div></article>
-    <article class="phi-item rv d4"><span class="phi-n">04</span><div class="phi-t"><h3>Uncompromising Quality</h3><p>Premium modest fabrics selected for drape, breathability, and the dignified presence that every covered Muslim woman deserves to feel all day long.</p><span class="phi-quote">"If it doesn't feel as composed as it looks, we haven't finished."</span></div></article>
+    <article class="phi-item rv d1"><span class="phi-n">01</span><div class="phi-t"><h3>No Compromise on Modesty</h3><p>Full coverage and full elegance — never one at the expense of the other.</p><span class="phi-quote">"She covers because she chooses to. The clothing honours that choice."</span></div></article>
+    <article class="phi-item rv d2"><span class="phi-n">02</span><div class="phi-t"><h3>Every Occasion Covered</h3><p>One wardrobe philosophy, many chapters — formal work, celebrations, Eid, family, prayer.</p><span class="phi-quote">"A Muslim woman's life is full. Her wardrobe should be too."</span></div></article>
+    <article class="phi-item rv d3"><span class="phi-n">03</span><div class="phi-t"><h3>Rooted in Her Identity</h3><p>Pakistani design language, Middle Eastern reach — modest clothing for both cultures.</p><span class="phi-quote">"Culture is not costume. We design for women who know the difference."</span></div></article>
+    <article class="phi-item rv d4"><span class="phi-n">04</span><div class="phi-t"><h3>Uncompromising Quality</h3><p>Premium modest fabrics for drape, breathability, and the dignity every covered woman deserves.</p><span class="phi-quote">"If it doesn't feel as composed as it looks, we haven't finished."</span></div></article>
   </div>
 </main>
 <footer role="contentinfo">
   <div class="footer-inner">
-    <div class="footer-brand"><a class="f-logo" href="index.html">AHWAD</a><span class="f-tagline">The Art of Being Seen.</span><p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p><div class="soc-row"><a class="soc-btn" href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a><a class="soc-btn" href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a><a class="soc-btn" href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a><a class="soc-btn disabled" href="#" aria-label="TikTok coming soon"><!-- TIKTOK URL HERE --><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a></div></div>
+    <div class="footer-brand"><a class="f-logo" href="index.html">AHWAD</a><span class="f-tagline">The Art of Being Seen.</span><p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p><div class="soc-row"><a class="soc-btn" href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a><a class="soc-btn" href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a><a class="soc-btn" href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a><a class="soc-btn disabled" href="#" aria-label="TikTok soon"><!-- TIKTOK URL --><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a></div></div>
     <nav class="footer-col" aria-label="Site links"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></nav>
     <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">instagram.com/ahwadpk</a></li><li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>

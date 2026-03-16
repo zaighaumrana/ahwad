@@ -1,13 +1,6 @@
-/* AHWAD nav.js — shared across all pages */
 (function(){
-  // Nav scroll shadow
   var nav=document.getElementById('nav');
-  if(nav){
-    window.addEventListener('scroll',function(){
-      nav.classList.toggle('scrolled',window.scrollY>40);
-    },{passive:true});
-  }
-  // Hamburger
+  if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50);},{passive:true});}
   var hbg=document.getElementById('hbg'),mob=document.getElementById('mob');
   if(hbg&&mob){
     hbg.addEventListener('click',function(){
@@ -17,19 +10,16 @@
       document.body.style.overflow=o?'hidden':'';
     });
   }
-  // Close menu
   window.closeMenu=function(){
     if(mob)mob.classList.remove('open');
     if(hbg){hbg.classList.remove('open');hbg.setAttribute('aria-expanded','false');}
     document.body.style.overflow='';
   };
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
-  // Active link
   var path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-links a,.mob a').forEach(function(a){
+  document.querySelectorAll('.nav-links a').forEach(function(a){
     if(a.getAttribute('href')===path)a.classList.add('active');
   });
-  // Scroll reveal
   var rvEls=document.querySelectorAll('.rv');
   if('IntersectionObserver' in window){
     var obs=new IntersectionObserver(function(entries){
