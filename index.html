@@ -3,151 +3,147 @@
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Ahwad — Modest Clothing for Muslim Women | Pakistan &amp; Middle East</title>
-<meta name="description" content="Ahwad is a modest fashion brand for Muslim working women in Pakistan and the Middle East. Elegant modest clothing, formal hijab styles, and occasion wear that honours your faith."/>
-<meta name="keywords" content="modest fashion Pakistan, modest clothing Muslim women, Islamic formal wear, hijab fashion, modest workwear, halal fashion, Pakistani modest brand"/>
+<meta name="description" content="Ahwad is a modest fashion brand for Muslim working women in Pakistan and the Middle East. Elegant modest clothing that honours your faith without compromising elegance."/>
+<meta name="keywords" content="modest fashion Pakistan, modest clothing Muslim women, Islamic formal wear, hijab fashion, modest workwear, halal fashion"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://ahwad.com/"/>
-<meta property="og:type" content="website"/><meta property="og:url" content="https://ahwad.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://ahwad.com/"/>
 <meta property="og:title" content="Ahwad — Modest Clothing for Muslim Women"/>
 <meta property="og:description" content="Elegant modest fashion for the Muslim working woman in Pakistan and the Middle East."/>
 <meta name="twitter:card" content="summary_large_image"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ahwad","description":"Modest fashion brand for Muslim women in Pakistan and the Middle East.","url":"https://ahwad.com","email":"founders.ahwad@gmail.com","sameAs":["https://www.facebook.com/AhwadPk/","https://www.instagram.com/ahwadpk/","https://www.threads.com/@ahwadpk"],"address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"},"areaServed":["Pakistan","UAE","Saudi Arabia","Kuwait","Qatar"]}</script>
 <link rel="stylesheet" href="style.css"/>
 <style>
-/* ── HOME LOADER ── */
-#ld{position:fixed;inset:0;z-index:9000;background:var(--parch);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .7s,visibility .7s;border-bottom:none}
-#ld.out{opacity:0;visibility:hidden}
+/* LOADER */
+#ld{position:fixed;inset:0;z-index:9000;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .7s,visibility .7s}
+#ld.out{opacity:0;visibility:hidden;pointer-events:none}
 .lw{display:flex;overflow:hidden}
 .lc{font-family:var(--fD);font-size:clamp(2rem,7vw,4.5rem);letter-spacing:.55em;color:var(--sage);display:inline-block;transform:translateY(110%);opacity:0}
-.ll{width:0;height:1px;background:var(--rose);margin-top:1.4rem;transition:width .9s ease}
-.ls{font-family:var(--fS);font-size:.9rem;font-style:italic;letter-spacing:.18em;color:var(--sage3);margin-top:.9rem;opacity:0;transition:opacity .6s}
-/* sketch line under loader logo */
-.l-rule{width:0;height:1px;background:var(--parch3);margin-top:.4rem;transition:width 1.2s .2s ease}
+.ll{width:0;height:1px;background:var(--rose2);margin-top:1.4rem;transition:width .9s ease}
+.lsub{font-family:var(--fS);font-size:.9rem;font-style:italic;letter-spacing:.18em;color:var(--sage3);margin-top:.9rem;opacity:0;transition:opacity .6s}
 
-/* ── HERO ── */
-.hero{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden;background:var(--parch2)}
-/* sketch grid lines */
-.hero-grid{position:absolute;inset:0;opacity:.06;
-  background-image:linear-gradient(var(--sage3) 1px,transparent 1px),linear-gradient(90deg,var(--sage3) 1px,transparent 1px);
-  background-size:60px 60px}
-/* sketch cross marks */
-.hero-cross{position:absolute;pointer-events:none}
-.hero-cross::before,.hero-cross::after{content:'';position:absolute;background:var(--rose);opacity:.25}
-.hero-cross::before{width:1px;height:12px;top:-6px;left:0}
-.hero-cross::after{width:12px;height:1px;top:0;left:-6px}
-.hc1{top:20%;right:15%}
-.hc2{bottom:30%;right:35%}
-.hc3{top:50%;left:8%}
-
-.hero-rule{position:absolute;left:var(--px);top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(196,137,122,.3) 30%,rgba(196,137,122,.3) 70%,transparent)}
-.hero-content{position:relative;z-index:2;padding:0 var(--px) 0 clamp(2.5rem,8vw,7rem);max-width:min(860px,90vw);width:100%}
-
-.hey{display:flex;align-items:center;gap:.9rem;margin-bottom:clamp(2rem,4vw,3rem);opacity:0;transform:translateY(14px)}
-.eyd{width:5px;height:5px;border-radius:50%;background:var(--rose);animation:pd 2.8s ease-in-out infinite}
+/* HERO */
+.hero{
+  min-height:100svh;
+  padding-top:62px; /* nav height — prevents cut-off */
+  position:relative;display:flex;align-items:center;overflow:hidden;
+  background:var(--bg2);
+}
+/* Subtle sketch grid */
+.hero-grid{position:absolute;inset:0;opacity:.05;background-image:linear-gradient(var(--sage3) 1px,transparent 1px),linear-gradient(90deg,var(--sage3) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+/* cross accents */
+.hx{position:absolute;width:10px;height:10px;pointer-events:none}
+.hx::before,.hx::after{content:'';position:absolute;background:var(--rose);opacity:.2}
+.hx::before{width:1px;height:100%;left:50%}
+.hx::after{height:1px;width:100%;top:50%}
+.hx1{top:22%;right:18%}.hx2{bottom:28%;right:38%}.hx3{top:52%;left:6%}
+/* vertical rule */
+.h-rule{position:absolute;left:var(--px);top:62px;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(168,104,88,.28) 30%,rgba(168,104,88,.28) 70%,transparent)}
+/* content */
+.h-cnt{position:relative;z-index:2;padding:clamp(2rem,5vw,4rem) var(--px) clamp(2rem,5vw,4rem) clamp(2.5rem,8vw,7rem);max-width:min(820px,90vw);width:100%}
+.h-ey{display:flex;align-items:center;gap:.9rem;margin-bottom:clamp(2rem,4vw,3rem);opacity:0;transform:translateY(12px)}
+.h-ey-dot{width:5px;height:5px;border-radius:50%;background:var(--rose);animation:pd 2.8s ease-in-out infinite}
 @keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.6)}}
-.hey span{font-family:var(--fD);font-size:clamp(.48rem,.75vw,.58rem);letter-spacing:.32em;text-transform:uppercase;color:var(--sage3)}
-
-.ht{font-family:var(--fS);font-size:clamp(3rem,8.5vw,7rem);font-weight:300;line-height:1.0;color:var(--sage);margin-bottom:clamp(1.5rem,3vw,2.5rem)}
-.tl{display:block;overflow:hidden}
+.h-ey span{font-family:var(--fD);font-size:clamp(.46rem,.75vw,.58rem);letter-spacing:.3em;text-transform:uppercase;color:var(--sage3)}
+/* HERO TITLE — key fix: no overflow:hidden on parent, generous padding */
+.h-title{
+  font-family:var(--fS);
+  font-size:clamp(2.8rem,8.5vw,7rem);
+  font-weight:300;line-height:1.04;
+  color:var(--sage);
+  margin-bottom:clamp(1.5rem,3vw,2.5rem);
+  padding-bottom:.1em; /* prevents descender clip */
+}
+.tl{display:block;overflow:hidden;padding-bottom:.05em} /* small padding prevents g/y clip */
 .ti{display:block;transform:translateY(110%)}
-.ht em{font-style:italic;color:var(--rose)}
-.ind{padding-left:clamp(1.5rem,4vw,4rem)}
+.h-title em{font-style:italic;color:var(--rose)}
+.indent{padding-left:clamp(1.5rem,4vw,3.5rem)}
+.h-desc{font-family:var(--fS);font-size:clamp(1rem,1.8vw,1.16rem);font-weight:300;font-style:italic;color:var(--sage3);line-height:1.85;max-width:min(460px,85vw);margin-bottom:clamp(2rem,4vw,3.5rem);opacity:0;transform:translateY(16px)}
+.h-ctas{display:flex;align-items:center;gap:clamp(1rem,3vw,2rem);flex-wrap:wrap;opacity:0;transform:translateY(16px)}
+/* sketch bracket on right */
+.h-bracket{position:absolute;right:clamp(2rem,8vw,7rem);top:50%;transform:translateY(-50%);width:min(150px,12vw);opacity:0;pointer-events:none}
+.h-bracket svg{width:100%;height:auto}
 
-.hds{font-family:var(--fS);font-size:clamp(1rem,1.8vw,1.18rem);font-weight:300;font-style:italic;color:var(--sage3);line-height:1.8;max-width:min(460px,85vw);margin-bottom:clamp(2rem,4vw,3.5rem);opacity:0;transform:translateY(18px)}
-.hct{display:flex;align-items:center;gap:clamp(1.2rem,3vw,2.5rem);flex-wrap:wrap;opacity:0;transform:translateY(18px)}
-
-/* sketch decorative bracket on hero right */
-.hero-bracket{position:absolute;right:clamp(2rem,8vw,8rem);top:50%;transform:translateY(-50%);width:160px;opacity:0}
-.hero-bracket svg{width:100%;height:auto}
-
-/* ── HOME NAV CARDS ── */
-.ql{padding:var(--sp) var(--px);background:var(--parch);display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
-.ql-card{display:block;text-decoration:none;padding:2.2rem 1.8rem;position:relative}
-.ql-card::after{content:'';position:absolute;top:.4rem;left:.4rem;right:.4rem;bottom:.4rem;border:1px solid transparent;transition:border-color .4s;pointer-events:none}
-.ql-card:hover::after{border-color:rgba(196,137,122,.2)}
-.ql-card:hover{transform:translateY(-3px);box-shadow:0 6px 28px rgba(196,137,122,.08)}
-.ql-num{font-family:var(--fS);font-size:2rem;font-weight:300;font-style:italic;color:var(--rose);opacity:.2;display:block;margin-bottom:.8rem;line-height:1}
+/* NAV CARDS */
+.ql{padding:var(--sp) var(--px);background:var(--bg);display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.ql-card{display:block;text-decoration:none;padding:2rem 1.7rem;background:var(--wh);border:1px solid var(--bg3);position:relative;overflow:hidden;transition:transform .4s,border-color .4s,box-shadow .4s}
+.ql-card::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--rose),var(--rose2));transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.77,0,.18,1)}
+.ql-card:hover{transform:translateY(-3px);border-color:var(--rose2);box-shadow:0 6px 26px rgba(168,104,88,.09)}
+.ql-card:hover::after{transform:scaleY(1)}
+.ql-num{font-family:var(--fS);font-size:1.8rem;font-weight:300;font-style:italic;color:var(--rose);opacity:.2;display:block;margin-bottom:.8rem;line-height:1}
 .ql-card h3{font-family:var(--fD);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.5rem}
 .ql-card p{font-family:var(--fB);font-weight:300;font-size:.83rem;line-height:1.75;color:var(--sage2)}
-.ql-arrow{display:inline-block;margin-top:1.2rem;font-family:var(--fD);font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);opacity:.55;transition:opacity .3s,transform .3s}
+.ql-arrow{display:inline-block;margin-top:1.1rem;font-family:var(--fD);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);opacity:.5;transition:opacity .3s,transform .3s}
 .ql-card:hover .ql-arrow{opacity:1;transform:translateX(4px)}
 
-/* sketch divider */
-.sketch-div{padding:1.5rem var(--px);display:flex;align-items:center;gap:1.5rem;background:var(--parch)}
-.sketch-div::before,.sketch-div::after{content:'';flex:1;height:1px;background:var(--parch3)}
-.sketch-div span{font-family:var(--fD);font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);opacity:.5;white-space:nowrap}
+.sketch-div{padding:1.2rem var(--px);display:flex;align-items:center;gap:1.5rem;background:var(--bg)}
+.sketch-div::before,.sketch-div::after{content:'';flex:1;height:1px;background:var(--bg3)}
+.sketch-div span{font-family:var(--fD);font-size:.48rem;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);opacity:.45;white-space:nowrap}
 
 @media(max-width:1024px){.ql{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.ql{grid-template-columns:1fr}.hero-rule{display:none}.hero-bracket{display:none}}
+@media(max-width:640px){.ql{grid-template-columns:1fr}.h-rule{display:none}.h-bracket{display:none}}
 </style>
 </head>
 <body>
+
 <div id="ld" role="status" aria-label="Loading Ahwad">
-  <div class="lw" aria-hidden="true">
-    <span class="lc" id="l0">A</span><span class="lc" id="l1">H</span><span class="lc" id="l2">W</span><span class="lc" id="l3">A</span><span class="lc" id="l4">D</span>
-  </div>
-  <div class="l-rule" id="lr"></div>
+  <div class="lw" aria-hidden="true"><span class="lc" id="l0">A</span><span class="lc" id="l1">H</span><span class="lc" id="l2">W</span><span class="lc" id="l3">A</span><span class="lc" id="l4">D</span></div>
   <div class="ll" id="ll"></div>
-  <p class="ls" id="ls">The art of being seen.</p>
+  <p class="lsub" id="ls">The art of being seen.</p>
 </div>
 
 <nav id="nav" role="navigation" aria-label="Main navigation">
-  <a class="nav-logo" href="index.html" aria-label="Ahwad Home">AHWAD</a>
+  <a class="nav-logo" href="index.html" aria-label="Ahwad — Home">AHWAD</a>
   <ul class="nav-links">
     <li><a href="about.html">Our Story</a></li>
     <li><a href="collections.html">Collections</a></li>
     <li><a href="philosophy.html">Philosophy</a></li>
-    <li class="nav-pill"><a href="waitlist.html">Notify Me</a></li>
+    <li><a href="waitlist.html" class="nav-pill">Notify Me</a></li>
   </ul>
   <button class="hbg" id="hbg" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
-<div class="mob" id="mob" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+<div class="mob" id="mob" role="dialog" aria-modal="true">
   <a href="about.html" onclick="closeMenu()">Our Story</a>
   <a href="collections.html" onclick="closeMenu()">Collections</a>
   <a href="philosophy.html" onclick="closeMenu()">Philosophy</a>
   <a href="waitlist.html" onclick="closeMenu()">Notify Me</a>
+  <a href="privacy.html" onclick="closeMenu()" style="font-size:.9rem;opacity:.5">Privacy Policy</a>
 </div>
 
 <section class="hero" aria-labelledby="hero-h">
   <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-cross hc1" aria-hidden="true"></div>
-  <div class="hero-cross hc2" aria-hidden="true"></div>
-  <div class="hero-cross hc3" aria-hidden="true"></div>
-  <div class="hero-rule" aria-hidden="true"></div>
-
-  <div class="hero-content">
-    <p class="hey" id="ey"><span class="eyd" aria-hidden="true"></span><span>Modest Fashion — Pakistan &amp; Middle East — Launching Soon</span></p>
-    <h1 class="ht" id="hero-h">
+  <div class="hx hx1" aria-hidden="true"></div>
+  <div class="hx hx2" aria-hidden="true"></div>
+  <div class="hx hx3" aria-hidden="true"></div>
+  <div class="h-rule" aria-hidden="true"></div>
+  <div class="h-cnt">
+    <p class="h-ey" id="ey"><span class="h-ey-dot" aria-hidden="true"></span><span>Modest Fashion — Pakistan &amp; Middle East — Launching Soon</span></p>
+    <h1 class="h-title" id="hero-h">
       <span class="tl"><span class="ti" id="t0">The art</span></span>
-      <span class="tl"><span class="ti ind" id="t1">of being <em>seen.</em></span></span>
+      <span class="tl"><span class="ti indent" id="t1">of being <em>seen.</em></span></span>
     </h1>
-    <p class="hds" id="hd">For the Muslim woman who moves through the world with intention — dressed not to seek attention, but impossible to ignore.</p>
-    <div class="hct" id="hc">
-      <a href="waitlist.html" class="btn-sage" aria-label="Join the Ahwad waitlist"><span>Join the Waitlist</span></a>
+    <p class="h-desc" id="hd">For the Muslim woman who moves through the world with intention — dressed not to seek attention, but impossible to ignore.</p>
+    <div class="h-ctas" id="hc">
+      <a href="waitlist.html" class="btn-sage"><span>Join the Waitlist</span></a>
       <a href="about.html" class="btn-outline">Our Story</a>
     </div>
   </div>
-
-  <!-- Sketch bracket decoration -->
-  <div class="hero-bracket" id="hbr" aria-hidden="true">
-    <svg viewBox="0 0 160 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="1" width="158" height="278" stroke="#C4897A" stroke-width="0.6" opacity="0.3"/>
-      <line x1="1" y1="1" x2="20" y2="1" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="1" y1="1" x2="1" y2="20" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="159" y1="1" x2="140" y2="1" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="159" y1="1" x2="159" y2="20" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="1" y1="279" x2="20" y2="279" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="1" y1="279" x2="1" y2="260" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="159" y1="279" x2="140" y2="279" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <line x1="159" y1="279" x2="159" y2="260" stroke="#C4897A" stroke-width="1.2" opacity="0.5"/>
-      <ellipse cx="80" cy="60" rx="22" ry="28" stroke="#C4897A" stroke-width="0.7" opacity="0.35"/>
-      <path d="M58 86 Q46 130 44 185 Q42 225 40 265 Q60 278 80 280 Q100 278 120 265 Q118 225 116 185 Q114 130 102 86Z" stroke="#C4897A" stroke-width="0.7" fill="none" opacity="0.3"/>
-      <path d="M58 94 Q36 134 30 175" stroke="#C4897A" stroke-width="0.6" opacity="0.2"/>
-      <path d="M102 94 Q124 134 130 175" stroke="#C4897A" stroke-width="0.6" opacity="0.2"/>
-      <circle cx="80" cy="60" r="3" fill="#C4897A" opacity="0.2"/>
-      <line x1="80" y1="20" x2="80" y2="32" stroke="#C4897A" stroke-width="0.6" opacity="0.2"/>
-      <text x="80" y="248" font-family="serif" font-size="7" fill="#C4897A" opacity="0.25" text-anchor="middle" font-style="italic">campaign imagery</text>
-      <text x="80" y="260" font-family="serif" font-size="7" fill="#C4897A" opacity="0.2" text-anchor="middle" font-style="italic">coming soon</text>
+  <div class="h-bracket" id="hbr" aria-hidden="true">
+    <svg viewBox="0 0 150 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="148" height="258" stroke="#A86858" stroke-width="0.5" opacity="0.25"/>
+      <line x1="1" y1="1" x2="18" y2="1" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="1" y1="1" x2="1" y2="18" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="149" y1="1" x2="132" y2="1" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="149" y1="1" x2="149" y2="18" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="1" y1="259" x2="18" y2="259" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="1" y1="259" x2="1" y2="242" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="149" y1="259" x2="132" y2="259" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <line x1="149" y1="259" x2="149" y2="242" stroke="#A86858" stroke-width="1" opacity="0.45"/>
+      <ellipse cx="75" cy="56" rx="20" ry="26" stroke="#A86858" stroke-width="0.7" opacity="0.3"/>
+      <path d="M55 80 Q44 122 42 175 Q40 212 38 250 Q56 260 75 262 Q94 260 112 250 Q110 212 108 175 Q106 122 95 80Z" stroke="#A86858" stroke-width="0.7" fill="none" opacity="0.25"/>
+      <text x="75" y="235" font-family="serif" font-size="6.5" fill="#A86858" opacity="0.22" text-anchor="middle" font-style="italic">campaign imagery</text>
+      <text x="75" y="247" font-family="serif" font-size="6.5" fill="#A86858" opacity="0.18" text-anchor="middle" font-style="italic">coming soon</text>
     </svg>
   </div>
 </section>
@@ -162,30 +158,10 @@
 <div class="sketch-div" aria-hidden="true"><span>Explore Ahwad</span></div>
 
 <section class="ql" aria-label="Site sections">
-  <a class="ql-card sk-card rv" href="about.html" aria-label="Read our brand story">
-    <span class="ql-num">01</span>
-    <h3>Our Story</h3>
-    <p>The name, the woman, the belief that modest fashion is a language — not a limitation.</p>
-    <span class="ql-arrow">Read More →</span>
-  </a>
-  <a class="ql-card sk-card rv d1" href="collections.html" aria-label="View collections">
-    <span class="ql-num">02</span>
-    <h3>Collections</h3>
-    <p>Three expressions of modest formal dressing — office, occasion, and everyday grace.</p>
-    <span class="ql-arrow">Explore →</span>
-  </a>
-  <a class="ql-card sk-card rv d2" href="philosophy.html" aria-label="Our design philosophy">
-    <span class="ql-num">03</span>
-    <h3>Philosophy</h3>
-    <p>Four principles that govern every silhouette, fabric, and design choice we make.</p>
-    <span class="ql-arrow">Discover →</span>
-  </a>
-  <a class="ql-card sk-card rv d3" href="waitlist.html" aria-label="Join the waitlist">
-    <span class="ql-num">04</span>
-    <h3>Notify Me</h3>
-    <p>First access to collections, early pricing, and launch previews — for those who register now.</p>
-    <span class="ql-arrow">Register →</span>
-  </a>
+  <a class="ql-card rv" href="about.html" aria-label="Our brand story"><span class="ql-num">01</span><h3>Our Story</h3><p>The name, the woman, the belief that modest fashion is a language — not a limitation.</p><span class="ql-arrow">Read →</span></a>
+  <a class="ql-card rv d1" href="collections.html" aria-label="View collections"><span class="ql-num">02</span><h3>Collections</h3><p>Three expressions of modest formal dressing — office, occasion, and everyday grace.</p><span class="ql-arrow">Explore →</span></a>
+  <a class="ql-card rv d2" href="philosophy.html" aria-label="Our philosophy"><span class="ql-num">03</span><h3>Philosophy</h3><p>Four principles that govern every silhouette, fabric, and design choice we make.</p><span class="ql-arrow">Discover →</span></a>
+  <a class="ql-card rv d3" href="waitlist.html" aria-label="Join the waitlist"><span class="ql-num">04</span><h3>Notify Me</h3><p>First access to collections, early pricing, and launch previews — register now.</p><span class="ql-arrow">Register →</span></a>
 </section>
 
 <footer role="contentinfo">
@@ -195,72 +171,37 @@
       <span class="f-tagline">The Art of Being Seen.</span>
       <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the Middle East and beyond.</p>
       <div class="soc-row">
-        <a class="soc-btn" href="https://www.facebook.com/AhwadPk/" rel="noopener" target="_blank" aria-label="Ahwad on Facebook">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook
-        </a>
-        <a class="soc-btn" href="https://www.instagram.com/ahwadpk/" rel="noopener" target="_blank" aria-label="Ahwad on Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
-        </a>
-        <a class="soc-btn" href="https://www.threads.com/@ahwadpk" rel="noopener" target="_blank" aria-label="Ahwad on Threads">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>Threads
-        </a>
-        <a class="soc-btn" href="#" aria-label="Ahwad on TikTok — link coming soon" style="opacity:.4;pointer-events:none">
-          <!-- TIKTOK LINK: replace href="#" with your TikTok URL -->
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.29 6.29 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.75a4.84 4.84 0 01-1-.06z"/></svg>TikTok
-        </a>
+        <a class="soc-btn" href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        <a class="soc-btn" href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a>
+        <a class="soc-btn" href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a>
+        <a class="soc-btn disabled" href="#" aria-label="TikTok — coming soon"><!-- TIKTOK: replace href="#" --><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a>
       </div>
     </div>
-    <nav class="footer-col" aria-label="Footer navigation">
-      <h4>Navigate</h4>
-      <ul>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="collections.html">Collections</a></li>
-        <li><a href="philosophy.html">Philosophy</a></li>
-        <li><a href="waitlist.html">Join Waitlist</a></li>
-      </ul>
-    </nav>
-    <div class="footer-col">
-      <h4>Collections</h4>
-      <ul>
-        <li><a href="collections.html">The Office</a></li>
-        <li><a href="collections.html">The Occasion</a></li>
-        <li><a href="collections.html">Everyday Grace</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li>
-        <li><a href="https://www.instagram.com/ahwadpk/" rel="noopener" target="_blank">@ahwadpk</a></li>
-        <li><a href="about.html">Islamabad, Pakistan</a></li>
-      </ul>
-    </div>
+    <nav class="footer-col" aria-label="Site links"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></nav>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">instagram.com/ahwadpk</a></li><li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p>
-    <a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a>
-  </div>
+  <div class="footer-bottom"><p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p><a href="privacy.html">Privacy Policy</a></div>
 </footer>
 
 <script>
 (function(){
-  function t(el,d,p){if(!el)return;setTimeout(()=>Object.assign(el.style,p),d)}
-  [0,1,2,3,4].forEach(i=>{t(document.getElementById('l'+i),150+i*70,{transition:'transform .6s cubic-bezier(.33,1,.68,1),opacity .6s',transform:'translateY(0)',opacity:'1'})});
-  t(document.getElementById('lr'),550,{width:'100px'});
-  t(document.getElementById('ll'),620,{width:'130px'});
-  t(document.getElementById('ls'),820,{opacity:'1'});
-  let started=false;
+  function t(el,d,p){if(!el)return;setTimeout(function(){Object.assign(el.style,p);},d);}
+  for(var i=0;i<5;i++){(function(i){t(document.getElementById('l'+i),150+i*68,{transition:'transform .62s cubic-bezier(.33,1,.68,1),opacity .62s',transform:'translateY(0)',opacity:'1'});})(i);}
+  t(document.getElementById('ll'),580,{width:'130px'});
+  t(document.getElementById('ls'),780,{opacity:'1'});
+  var done=false;
   function startHero(){
-    if(started)return;started=true;
+    if(done)return;done=true;
     t(document.getElementById('ey'),60,{transition:'opacity .65s ease,transform .65s ease',opacity:'1',transform:'translateY(0)'});
     t(document.getElementById('t0'),160,{transition:'transform .9s cubic-bezier(.33,1,.68,1)',transform:'translateY(0)'});
     t(document.getElementById('t1'),300,{transition:'transform .9s cubic-bezier(.33,1,.68,1)',transform:'translateY(0)'});
     t(document.getElementById('hd'),500,{transition:'opacity .75s ease,transform .75s ease',opacity:'1',transform:'translateY(0)'});
     t(document.getElementById('hc'),660,{transition:'opacity .75s ease,transform .75s ease',opacity:'1',transform:'translateY(0)'});
-    t(document.getElementById('hbr'),900,{transition:'opacity .8s ease',opacity:'1'});
+    t(document.getElementById('hbr'),880,{transition:'opacity .8s ease',opacity:'1'});
   }
-  window.addEventListener('load',()=>setTimeout(()=>{document.getElementById('ld').classList.add('out');startHero();},1600));
-  setTimeout(()=>{document.getElementById('ld').classList.add('out');startHero();},3000);
+  window.addEventListener('load',function(){setTimeout(function(){document.getElementById('ld').classList.add('out');startHero();},1500);});
+  setTimeout(function(){document.getElementById('ld').classList.add('out');startHero();},3000);
 })();
 </script>
 <script src="nav.js"></script>
