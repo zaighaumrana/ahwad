@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Our Story — Ahwad Modest Fashion</title>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Story — Ahwad Modest Fashion | Pakistan &amp; Middle East</title>
 <meta name="description" content="The story behind Ahwad — a modest fashion brand for Muslim working women in Pakistan and the Middle East, founded on the belief that faith and elegance are never in conflict."/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://ahwad.com/about.html"/>
 <meta property="og:title" content="Our Story — Ahwad Modest Fashion"/>
 <meta property="og:description" content="Founded on the belief that modest dressing is a language — not a limitation."/>
-<meta property="og:url" content="https://ahwad.com/about.html"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Cinzel:wght@400&family=Jost:wght@300;400&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="style.css"/>
 <style>
-.content{padding:var(--sp) var(--px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,7vw,8rem);align-items:start;position:relative;overflow:hidden;background:var(--c)}
-.content::after{content:'A';position:absolute;right:-.5rem;top:1rem;font-family:var(--fS);font-size:clamp(15rem,28vw,28rem);font-weight:300;font-style:italic;color:var(--g);opacity:.022;line-height:1;pointer-events:none;user-select:none}
-.al h2{font-family:var(--fS);font-size:clamp(1.8rem,3.5vw,3.2rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:1.8rem}
-.al h2 em{font-style:italic;color:var(--g)}
-.al p{font-family:var(--fB);font-weight:300;font-size:clamp(.85rem,1.2vw,.95rem);line-height:2.05;color:var(--ink3);margin-bottom:1.5rem;max-width:500px}
-.al p strong{font-weight:400;color:var(--ink)}
-.pq{margin:2.5rem 0;padding:1.8rem 2.2rem;background:var(--c2);border-left:2px solid var(--g2)}
-.pq q{font-family:var(--fS);font-size:clamp(1.1rem,1.8vw,1.28rem);font-style:italic;font-weight:300;color:var(--ink);line-height:1.6;quotes:none;display:block}
-.pq cite{display:block;margin-top:.8rem;font-family:var(--fD);font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--g);font-style:normal}
-.ar{padding-top:clamp(1rem,4vw,4rem);display:flex;flex-direction:column;gap:1.2rem}
-.vc{padding:1.8rem 2rem;border:1px solid rgba(160,120,40,.11);background:var(--wh);position:relative;overflow:hidden;transition:transform .4s,border-color .4s,box-shadow .4s}
-.vc::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--g),var(--g2));transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.77,0,.18,1)}
-.vc:hover{transform:translateX(6px);border-color:rgba(160,120,40,.28);box-shadow:0 4px 24px rgba(160,120,40,.05)}
+.about-main{padding:var(--sp) var(--px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,7vw,8rem);align-items:start;background:var(--parch);position:relative;overflow:hidden}
+.about-main::after{content:'A';position:absolute;right:-1rem;top:2rem;font-family:var(--fS);font-size:clamp(14rem,28vw,28rem);font-weight:300;font-style:italic;color:var(--sage);opacity:.02;line-height:1;pointer-events:none;user-select:none}
+.al h2{font-family:var(--fS);font-size:clamp(2rem,4vw,3.6rem);font-weight:300;line-height:1.12;color:var(--sage);margin-bottom:2rem}
+.al h2 em{font-style:italic;color:var(--rose)}
+.al p{font-family:var(--fB);font-weight:300;font-size:clamp(.85rem,1.2vw,.93rem);line-height:2.05;color:var(--sage2);margin-bottom:1.5rem;max-width:480px}
+.al p strong{font-weight:400;color:var(--sage)}
+.pq{margin:2.5rem 0;padding:1.8rem 2.2rem;background:var(--parch2);border-left:2px solid var(--rose2);position:relative}
+.pq::before{content:'\275D';position:absolute;top:-.8rem;left:1.2rem;font-size:3rem;color:var(--rose);opacity:.15;font-family:Georgia,serif;line-height:1}
+.pq q{font-family:var(--fS);font-size:clamp(1.1rem,1.8vw,1.28rem);font-style:italic;font-weight:300;color:var(--sage);line-height:1.65;quotes:none;display:block}
+.pq cite{display:block;margin-top:.8rem;font-family:var(--fD);font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font-style:normal}
+.ar{padding-top:clamp(1rem,4vw,4rem);display:flex;flex-direction:column;gap:1.1rem}
+.vc{padding:1.8rem 2rem;border:1px solid var(--parch3);background:var(--wh);position:relative;overflow:hidden;transition:transform .4s,border-color .4s,box-shadow .4s}
+.vc::before{content:'';position:absolute;top:.35rem;left:.35rem;right:.35rem;bottom:.35rem;border:1px solid transparent;transition:border-color .4s;pointer-events:none}
+.vc::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--rose),var(--rose2));transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.77,0,.18,1)}
+.vc:hover{transform:translateX(5px);border-color:var(--rose2);box-shadow:0 4px 22px rgba(196,137,122,.08)}
+.vc:hover::before{border-color:rgba(196,137,122,.1)}
 .vc:hover::after{transform:scaleY(1)}
-.vc h3{font-family:var(--fD);font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:.55rem}
-.vc p{font-family:var(--fB);font-weight:300;font-size:.87rem;line-height:1.85;color:var(--ink3)}
-.cta-row{margin-top:2.5rem;display:flex;gap:1.2rem;flex-wrap:wrap}
-@media(max-width:1024px){.content{grid-template-columns:1fr;gap:3rem}.content::after{display:none}.ar{padding-top:0}}
+.vc h3{font-family:var(--fD);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:.55rem}
+.vc p{font-family:var(--fB);font-weight:300;font-size:.87rem;line-height:1.85;color:var(--sage2)}
+.cta-row{margin-top:2.5rem;display:flex;gap:1.1rem;flex-wrap:wrap}
+@media(max-width:1024px){.about-main{grid-template-columns:1fr;gap:3rem}.about-main::after{display:none}.ar{padding-top:0}}
 </style>
 </head>
-<body>
-<nav id="nav" class="light" role="navigation" aria-label="Main navigation">
+<body class="page-top">
+<nav id="nav" class="sc" role="navigation" aria-label="Main navigation">
   <a class="nav-logo" href="index.html">AHWAD</a>
   <ul class="nav-links">
     <li><a href="about.html">Our Story</a></li>
     <li><a href="collections.html">Collections</a></li>
     <li><a href="philosophy.html">Philosophy</a></li>
-    <li><a href="waitlist.html">Notify Me</a></li>
+    <li class="nav-pill"><a href="waitlist.html">Notify Me</a></li>
   </ul>
   <button class="hbg" id="hbg" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
@@ -54,55 +52,66 @@
 </div>
 
 <header class="page-hero" aria-labelledby="ph">
-  <div class="page-hero-iso" aria-hidden="true"></div>
-  <div class="page-hero-orb" aria-hidden="true"></div>
+  <div class="corner-tl" aria-hidden="true"></div>
+  <div class="corner-br" aria-hidden="true"></div>
   <div class="page-hero-content">
     <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Our Story</span></div>
     <h1 id="ph">Dressed with faith.<br/><em>Built for her life.</em></h1>
-    <p>The story of a brand founded on the belief that modest dressing is not a limitation — it is a language.</p>
+    <p class="page-hero-sub">The story of a brand founded on the belief that modest dressing is not a limitation — it is a language.</p>
   </div>
 </header>
 
 <div class="mq" aria-hidden="true">
   <div class="mqt">
-    <span class="mi">Our Story</span><span class="ms">✦</span><span class="mi">Faith</span><span class="ms">✦</span><span class="mi">Identity</span><span class="ms">✦</span><span class="mi">Grace</span><span class="ms">✦</span><span class="mi">Ahwad</span><span class="ms">✦</span><span class="mi">Heritage</span><span class="ms">✦</span><span class="mi">Purpose</span><span class="ms">✦</span>
-    <span class="mi">Our Story</span><span class="ms">✦</span><span class="mi">Faith</span><span class="ms">✦</span><span class="mi">Identity</span><span class="ms">✦</span><span class="mi">Grace</span><span class="ms">✦</span><span class="mi">Ahwad</span><span class="ms">✦</span><span class="mi">Heritage</span><span class="ms">✦</span><span class="mi">Purpose</span><span class="ms">✦</span>
+    <span class="mi">Our Story</span><span class="ms">✦</span><span class="mi">Faith</span><span class="ms">✦</span><span class="mi">Identity</span><span class="ms">✦</span><span class="mi">Grace</span><span class="ms">✦</span><span class="mi">Heritage</span><span class="ms">✦</span><span class="mi">Purpose</span><span class="ms">✦</span><span class="mi">Ahwad</span><span class="ms">✦</span>
+    <span class="mi">Our Story</span><span class="ms">✦</span><span class="mi">Faith</span><span class="ms">✦</span><span class="mi">Identity</span><span class="ms">✦</span><span class="mi">Grace</span><span class="ms">✦</span><span class="mi">Heritage</span><span class="ms">✦</span><span class="mi">Purpose</span><span class="ms">✦</span><span class="mi">Ahwad</span><span class="ms">✦</span>
   </div>
 </div>
 
-<main class="content" id="about">
+<main class="about-main" id="about">
   <div class="al">
     <p class="sl rv">Our Story</p>
     <h2 class="rv d1">Where faith meets<br/><em>contemporary elegance.</em></h2>
-    <p class="rv d2">Ahwad was founded on a single, clear belief: that <strong>modest dressing is not a limitation — it is a language</strong>. A way of moving through the world with intention, composure, and a quiet power that announces itself without saying a word.</p>
+    <p class="rv d2">Ahwad was founded on a single clear belief: that <strong>modest dressing is not a limitation — it is a language</strong>. A way of moving through the world with intention, composure, and a quiet power that announces itself without saying a word.</p>
     <p class="rv d2">We create clothing for the Muslim working woman in Pakistan and the Middle East — pieces that carry her from a morning meeting to an evening gathering without asking her to change who she is, compromise her values, or translate herself for anyone else's comfort.</p>
-    <p class="rv d2">Every garment begins with a single question: does this honour her? If the answer is anything other than an unqualified yes, we start again.</p>
+    <p class="rv d2">Every garment begins with one question: does this honour her? If the answer is anything other than an unqualified yes, we start again.</p>
     <div class="pq rv d3">
       <q>She doesn't dress to impress. She dresses to express — a faith, a culture, a self that needs no compromise.</q>
       <cite>The Ahwad Woman</cite>
     </div>
-    <p class="rv d3">The name <strong>Ahwad</strong> is a classical Arabic feminine name meaning <em>beautiful, dark-eyed</em> — the gaze celebrated in centuries of Arabic poetry as the mark of a woman of depth, grace, and composed inner confidence. We carry that heritage into every stitch, every silhouette, every collection we build.</p>
+    <p class="rv d3">The name <strong>Ahwad</strong> is a classical Arabic feminine name meaning <em>beautiful, dark-eyed</em> — celebrated in centuries of Arabic poetry as the mark of a woman of depth, grace, and composed inner confidence. We carry that heritage into every stitch.</p>
     <div class="cta-row rv d4">
-      <a href="collections.html" class="btn-gold"><span>View Collections</span></a>
+      <a href="collections.html" class="btn-sage"><span>View Collections</span></a>
       <a href="waitlist.html" class="btn-outline">Join the Waitlist</a>
     </div>
   </div>
   <div class="ar">
-    <article class="vc rv d1"><h3>Occasion-Ready Modest Wear</h3><p>From formal offices to family celebrations — modest pieces designed to transition seamlessly across every setting without any compromise to your coverage or elegance.</p></article>
-    <article class="vc rv d2"><h3>Faith-Centred Design</h3><p>Modest coverage is not an afterthought — it is the very foundation from which every silhouette, cut, and fabric choice begins. Designed for Muslim women by design.</p></article>
-    <article class="vc rv d3"><h3>Pakistan &amp; Middle East</h3><p>Rooted in Pakistani sensibility, designed to resonate across the Middle East — a shared aesthetic of grace for Muslim women in Karachi, Dubai, Riyadh, and beyond.</p></article>
-    <article class="vc rv d4"><h3>Premium Modest Quality</h3><p>Fabrics chosen for drape, breathability, and lasting presence — clothing that looks composed because it genuinely feels composed all day long.</p></article>
+    <article class="vc rv d1"><h3>Occasion-Ready Modest Wear</h3><p>From formal offices to family celebrations — pieces designed to transition seamlessly without any compromise to coverage or elegance.</p></article>
+    <article class="vc rv d2"><h3>Faith-Centred Design</h3><p>Modest coverage is not an afterthought — it is the foundation from which every silhouette, cut, and fabric choice begins.</p></article>
+    <article class="vc rv d3"><h3>Pakistan &amp; Middle East</h3><p>Rooted in Pakistani sensibility, designed for Muslim women across the Middle East — Karachi, Dubai, Riyadh, and beyond.</p></article>
+    <article class="vc rv d4"><h3>Premium Modest Quality</h3><p>Fabrics chosen for drape, breathability, and lasting presence — clothing that looks composed because it genuinely feels composed.</p></article>
   </div>
 </main>
 
 <footer role="contentinfo">
-  <div class="fg">
-    <div class="fb"><a class="fbl" href="index.html">AHWAD</a><p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p></div>
-    <nav class="fc" aria-label="Footer nav"><span class="fct">Navigate</span><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li></ul></nav>
-    <div class="fc"><span class="fct">Contact</span><ul><li><a href="https://instagram.com/ahwad" rel="noopener" target="_blank">Instagram</a></li><li><a href="mailto:hello@ahwad.com">hello@ahwad.com</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="f-logo" href="index.html">AHWAD</a>
+      <span class="f-tagline">The Art of Being Seen.</span>
+      <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p>
+      <div class="soc-row">
+        <a class="soc-btn" href="https://www.facebook.com/AhwadPk/" rel="noopener" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        <a class="soc-btn" href="https://www.instagram.com/ahwadpk/" rel="noopener" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        <a class="soc-btn" href="https://www.threads.com/@ahwadpk" rel="noopener" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a>
+        <a class="soc-btn" href="#" style="opacity:.35;pointer-events:none" aria-label="TikTok coming soon"><!-- TIKTOK URL HERE --><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-6.13 6.33 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.75a4.84 4.84 0 01-1-.06z"/></svg>TikTok</a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Footer nav"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li></ul></nav>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener" target="_blank">@ahwadpk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
   </div>
-  <div class="fbt"><p>© 2025 Ahwad. All rights reserved.</p><p>The Art of Being Seen.</p></div>
+  <div class="footer-bottom"><p>© 2025 Ahwad. All rights reserved.</p><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></div>
 </footer>
-<script src="js/nav.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>
