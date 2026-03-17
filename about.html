@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Story — Ahwad Modest Fashion</title>
+<meta name="description" content="The story behind Ahwad — a modest fashion brand for Muslim working women in Pakistan and the Middle East, built on the belief that faith and elegance are never in conflict."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://ahwad.com/about.html"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.about-body { padding: clamp(4rem,8vw,9rem) clamp(1.5rem,7vw,8rem); background: var(--cream); }
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 10rem);
+  align-items: start;
+  margin-bottom: clamp(5rem,10vw,10rem);
+}
+.about-intro-left h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem,5vw,4.5rem);
+  font-weight: 300; line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: clamp(2rem,4vw,3.5rem);
+}
+.about-intro-left h2 em { font-style: italic; color: var(--gold); }
+
+.about-intro-right { padding-top: clamp(1rem,3vw,3rem); }
+.about-intro-right p {
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(.9rem,1.2vw,1rem);
+  font-weight: 300; line-height: 2;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+.about-intro-right strong { font-weight: 400; color: var(--ink); }
+
+.pull {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.2rem,2vw,1.6rem);
+  font-style: italic; font-weight: 300;
+  color: var(--ink);
+  line-height: 1.55;
+  border-left: 2px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+}
+.pull cite {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-size: .62rem; font-weight: 400;
+  letter-spacing: .25em; text-transform: uppercase;
+  color: var(--gold); margin-top: .9rem;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(24,24,24,.1);
+  border-left: 1px solid rgba(24,24,24,.1);
+}
+.val {
+  padding: clamp(2rem,4vw,3.5rem) clamp(1.5rem,3vw,3rem);
+  border-right: 1px solid rgba(24,24,24,.1);
+  border-bottom: 1px solid rgba(24,24,24,.1);
+}
+.val h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 300;
+  color: var(--ink); margin-bottom: .9rem;
+}
+.val p {
+  font-family: 'Jost', sans-serif;
+  font-size: .88rem; font-weight: 300;
+  color: var(--ink-soft); line-height: 1.85;
+}
+
+.about-ctas {
+  margin-top: clamp(3rem,6vw,5rem);
+  display: flex; gap: 1rem; flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .about-intro { grid-template-columns: 1fr; }
+  .about-values { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="n-logo" href="index.html">AHWAD</a>
+  <ul class="n-links" role="list">
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <a class="n-cta" href="waitlist.html">Notify Me</a>
+  <button class="n-hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="mob" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="about.html" onclick="closeMob()">Our Story</a>
+  <a href="collections.html" onclick="closeMob()">Collections</a>
+  <a href="philosophy.html" onclick="closeMob()">Philosophy</a>
+  <a href="privacy.html" onclick="closeMob()">Privacy</a>
+  <a href="waitlist.html" onclick="closeMob()" class="mob-cta">Notify Me</a>
+</div>
+<header class="page-header">
+  <span class="eyebrow">Our Story</span>
+  <h1>Dressed with faith.<br/><em>Built for her life.</em></h1>
+  <p>Founded on the belief that modest dressing is not a limitation — it is a language.</p>
+</header>
+<div class="marquee" aria-hidden="true"><div class="marquee-inner"><span>Our Story</span><span class="sep">—</span><span>Faith</span><span class="sep">—</span><span>Identity</span><span class="sep">—</span><span>Grace</span><span class="sep">—</span><span>Heritage</span><span class="sep">—</span><span>Ahwad</span><span class="sep">—</span><span>Our Story</span><span class="sep">—</span><span>Faith</span><span class="sep">—</span><span>Identity</span><span class="sep">—</span><span>Grace</span><span class="sep">—</span><span>Heritage</span><span class="sep">—</span><span>Ahwad</span><span class="sep">—</span></div></div>
+<main class="about-body">
+  <div class="about-intro">
+    <div class="about-intro-left rv">
+      <span class="eyebrow">Who We Are</span>
+      <h2>Where faith meets<br/><em>contemporary elegance.</em></h2>
+    </div>
+    <div class="about-intro-right">
+      <p class="rv d1">Ahwad was founded on a single clear belief: that <strong>modest dressing is not a limitation — it is a language</strong>. A way of moving through the world with intention, composure, and a quiet power that announces itself without saying a word.</p>
+      <p class="rv d1">We create clothing for the Muslim working woman in Pakistan and the Middle East — pieces that carry her from a morning meeting to an evening gathering without asking her to change who she is, compromise her values, or translate herself for anyone's comfort.</p>
+      <p class="rv d2">Every garment begins with one question: does this honour her? If the answer is anything other than an unqualified yes, we start again.</p>
+      <div class="pull rv d2">
+        She doesn't dress to impress. She dresses to express — a faith, a culture, a self that needs no compromise.
+        <cite>The Ahwad Woman</cite>
+      </div>
+      <p class="rv d3">The name <strong>Ahwad</strong> is a classical Arabic feminine name meaning <em>beautiful, dark-eyed</em> — celebrated in centuries of poetry as the mark of a woman of depth, grace, and composed inner confidence. We carry that heritage into every stitch, every silhouette, every collection we build.</p>
+      <div class="about-ctas rv d3">
+        <a href="collections.html" class="btn btn-dark">View Collections</a>
+        <a href="waitlist.html" class="btn btn-ghost">Join the Waitlist</a>
+      </div>
+    </div>
+  </div>
+  <div class="about-values">
+    <div class="val rv"><h3>Occasion-Ready Modest Wear</h3><p>From formal offices to family celebrations — modest pieces that transition seamlessly without any compromise to your coverage or elegance.</p></div>
+    <div class="val rv d1"><h3>Faith-Centred Design</h3><p>Modest coverage is not an afterthought — it is the foundation from which every silhouette, cut, and fabric choice begins.</p></div>
+    <div class="val rv d2"><h3>Pakistan &amp; Middle East</h3><p>Rooted in Pakistani sensibility, designed to resonate across the Middle East — a shared aesthetic of grace for Muslim women everywhere.</p></div>
+    <div class="val rv d3"><h3>Premium Modest Quality</h3><p>Fabrics chosen for drape, breathability, and lasting presence — clothing that looks composed because it genuinely feels composed.</p></div>
+  </div>
+</main>
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="f-name" href="index.html">AHWAD</a>
+      <span class="f-tag">The Art of Being Seen.</span>
+      <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        <a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a>
+        <a href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a>
+        <a class="dim" href="#" aria-label="TikTok coming soon"><!-- TIKTOK: swap href="#" for your URL --><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Footer navigation"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></nav>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">@ahwadpk</a></li><li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p><a href="privacy.html">Privacy Policy</a></div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>

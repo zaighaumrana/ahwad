@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Join the Waitlist — Ahwad Modest Fashion</title>
+<meta name="description" content="Join the Ahwad waitlist for early access to modest fashion collections in Pakistan and the Middle East. First access, early pricing, and exclusive launch previews."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://ahwad.com/waitlist.html"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.wl-body {
+  padding: clamp(4rem,8vw,9rem) clamp(1.5rem,7vw,8rem);
+  background: var(--cream);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem,8vw,10rem);
+  align-items: center;
+  min-height: calc(100vh - 60px);
+}
+.wl-left h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem,5vw,4.2rem);
+  font-weight: 300; line-height: 1.1;
+  color: var(--ink); margin: 1rem 0 1.5rem;
+}
+.wl-left h2 em { font-style: italic; color: var(--gold); }
+.wl-left p {
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(.88rem,1.2vw,.96rem);
+  font-weight: 300; line-height: 2;
+  color: var(--ink-soft); max-width: 400px;
+}
+.wl-perks {
+  margin-top: 2.5rem;
+  display: flex; flex-direction: column; gap: .85rem;
+}
+.wl-perk {
+  display: flex; align-items: center; gap: .8rem;
+  font-family: 'Jost', sans-serif;
+  font-size: .8rem; font-weight: 300;
+  color: var(--ink-soft);
+}
+.wl-perk::before {
+  content: '';
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+}
+
+/* FORM */
+.wl-form-wrap {
+  background: var(--white);
+  border: 1px solid rgba(24,24,24,.12);
+  padding: clamp(2rem,4vw,3.5rem);
+  position: relative;
+}
+.wl-form-wrap::before {
+  content: '';
+  position: absolute; top: -1px; left: 2.5rem; right: 2.5rem;
+  height: 2px; background: var(--gold);
+}
+.wl-form-wrap h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem; font-weight: 300;
+  color: var(--ink); margin-bottom: .4rem;
+}
+.wl-sub {
+  font-family: 'Jost', sans-serif;
+  font-size: .82rem; font-weight: 300;
+  color: var(--ink-muted); margin-bottom: 2rem; line-height: 1.6;
+}
+.wf { margin-bottom: 1.2rem; }
+.wf label {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: .6rem; font-weight: 400;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--ink-soft); margin-bottom: .45rem;
+}
+.wf input, .wf select {
+  width: 100%;
+  padding: .82rem 1rem;
+  background: var(--cream);
+  border: 1px solid rgba(24,24,24,.15);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300; font-size: .92rem;
+  color: var(--ink); outline: none;
+  transition: border-color .25s, background .25s;
+  border-radius: 0; appearance: none; -webkit-appearance: none;
+}
+.wf input:focus, .wf select:focus { border-color: var(--gold); background: var(--white); }
+.wf input::placeholder { color: var(--ink-muted); opacity: .45; }
+.wf select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1rem center;
+  background-color: var(--cream);
+}
+.wf select option { background: var(--white); }
+.err { border-color: #c0392b !important; }
+.wl-btn {
+  width: 100%; padding: 1rem;
+  background: var(--ink); border: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300; font-size: .72rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: #fff; cursor: pointer;
+  transition: background .25s; margin-top: .5rem;
+}
+.wl-btn:hover { background: #333; }
+.wl-note {
+  margin-top: 1rem; text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: .72rem; font-weight: 300;
+  color: var(--ink-muted);
+}
+.wl-note a { color: var(--gold); text-decoration: none; }
+#wl-ok { display: none; text-align: center; padding: 3rem 1rem; }
+.ok-check {
+  width: 44px; height: 44px;
+  margin: 0 auto 1.2rem;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; color: var(--gold);
+}
+#wl-ok h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem; font-weight: 300; font-style: italic;
+  color: var(--ink); margin-bottom: .5rem;
+}
+#wl-ok p {
+  font-family: 'Jost', sans-serif;
+  font-size: .85rem; font-weight: 300;
+  color: var(--ink-soft); margin-bottom: 1.5rem;
+}
+#wl-ok a {
+  font-family: 'Jost', sans-serif;
+  font-size: .7rem; font-weight: 300;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none;
+  border-bottom: 1px solid rgba(154,123,46,.3); padding-bottom: 2px;
+}
+
+@media (max-width: 900px) { .wl-body { grid-template-columns: 1fr; align-items: start; } }
+</style>
+</head>
+<body>
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="n-logo" href="index.html">AHWAD</a>
+  <ul class="n-links" role="list">
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <a class="n-cta" href="waitlist.html">Notify Me</a>
+  <button class="n-hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="mob" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="about.html" onclick="closeMob()">Our Story</a>
+  <a href="collections.html" onclick="closeMob()">Collections</a>
+  <a href="philosophy.html" onclick="closeMob()">Philosophy</a>
+  <a href="privacy.html" onclick="closeMob()">Privacy</a>
+  <a href="waitlist.html" onclick="closeMob()" class="mob-cta">Notify Me</a>
+</div>
+<header class="page-header">
+  <span class="eyebrow">Notify Me</span>
+  <h1>The launch<br/>is <em>coming.</em></h1>
+  <p>Join the private list before Ahwad opens to the public. First access, early pricing, exclusive previews.</p>
+</header>
+<div class="marquee" aria-hidden="true"><div class="marquee-inner"><span>Launching Soon</span><span class="sep">—</span><span>Pakistan</span><span class="sep">—</span><span>Middle East</span><span class="sep">—</span><span>Early Access</span><span class="sep">—</span><span>Be First</span><span class="sep">—</span><span>Launching Soon</span><span class="sep">—</span><span>Pakistan</span><span class="sep">—</span><span>Middle East</span><span class="sep">—</span><span>Early Access</span><span class="sep">—</span><span>Be First</span><span class="sep">—</span></div></div>
+<main class="wl-body">
+  <div class="wl-left">
+    <span class="eyebrow rv">Be First</span>
+    <h2 class="rv d1">Reserved for<br/>those who <em>register now.</em></h2>
+    <p class="rv d2">Ahwad is preparing to launch modest fashion collections for Muslim women across Pakistan and the Middle East. This list gives you access before anyone else.</p>
+    <div class="wl-perks rv d3">
+      <div class="wl-perk">First access to all three collections</div>
+      <div class="wl-perk">Early-launch pricing</div>
+      <div class="wl-perk">Behind-the-scenes previews</div>
+      <div class="wl-perk">No spam — only what matters</div>
+    </div>
+  </div>
+  <div class="wl-form-wrap rv d1">
+    <div id="wl-form-inner">
+      <h3>Register Your Interest</h3>
+      <p class="wl-sub">We'll notify you the moment Ahwad launches in Pakistan and the Middle East.</p>
+      <div class="wf"><label for="wn">Your Name</label><input type="text" id="wn" name="name" autocomplete="name" placeholder="e.g. Fatima Khan"/></div>
+      <div class="wf"><label for="we">Email Address</label><input type="email" id="we" name="email" autocomplete="email" placeholder="your@email.com"/></div>
+      <div class="wf"><label for="wco">Country</label>
+        <select id="wco" name="country">
+          <option value="" disabled selected>Select your country</option>
+          <option value="PK">Pakistan</option>
+          <option value="AE">United Arab Emirates</option>
+          <option value="SA">Saudi Arabia</option>
+          <option value="KW">Kuwait</option>
+          <option value="QA">Qatar</option>
+          <option value="BH">Bahrain</option>
+          <option value="OM">Oman</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="wf"><label for="wc">City</label><input type="text" id="wc" name="city" autocomplete="address-level2" placeholder="Karachi, Lahore, Dubai, Riyadh…"/></div>
+      <button class="wl-btn" onclick="sub()">Notify Me When We Launch</button>
+      <p class="wl-note">No spam. See our <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+    <div id="wl-ok" role="alert">
+      <div class="ok-check" aria-hidden="true">✓</div>
+      <h4>You're on the list.</h4>
+      <p>We'll be in touch before anyone else hears a word.</p>
+      <a href="collections.html">Explore our collections →</a>
+    </div>
+  </div>
+</main>
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="f-name" href="index.html">AHWAD</a>
+      <span class="f-tag">The Art of Being Seen.</span>
+      <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        <a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a>
+        <a href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a>
+        <a class="dim" href="#" aria-label="TikTok coming soon"><!-- TIKTOK: swap href="#" for your URL --><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Footer navigation"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></nav>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">@ahwadpk</a></li><li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p><a href="privacy.html">Privacy Policy</a></div>
+</footer>
+<script>
+function sub(){
+  var n=document.getElementById('wn'),e=document.getElementById('we'),c=document.getElementById('wco');
+  [n,e,c].forEach(function(x){x.classList.remove('err');});
+  var ok=true;
+  if(!n.value.trim()){n.classList.add('err');ok=false;}
+  if(!e.value.trim()||!e.value.includes('@')){e.classList.add('err');ok=false;}
+  if(!c.value){c.classList.add('err');ok=false;}
+  if(!ok){[n,e,c].find(function(x){return x.classList.contains('err');}).focus();return;}
+  document.getElementById('wl-form-inner').style.display='none';
+  document.getElementById('wl-ok').style.display='block';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&document.activeElement.closest('.wl-form-wrap'))sub();});
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

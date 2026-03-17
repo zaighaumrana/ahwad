@@ -1,940 +1,423 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ahwad — The Art of Being Seen</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400&family=Noto+Naskh+Arabic:wght@400;500&display=swap" rel="stylesheet"/>
+<title>Ahwad — Modest Clothing for Muslim Women | Pakistan &amp; Middle East</title>
+<meta name="description" content="Ahwad is a modest fashion brand for Muslim working women in Pakistan and the Middle East. Elegant modest clothing, formal hijab styles, and occasion wear that honours your faith."/>
+<meta name="keywords" content="modest fashion Pakistan, modest clothing Muslim women, Islamic formal wear, hijab fashion, modest workwear, halal fashion"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://ahwad.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://ahwad.com/"/>
+<meta property="og:title" content="Ahwad — Modest Clothing for Muslim Women"/>
+<meta property="og:description" content="Elegant modest fashion for the Muslim working woman in Pakistan and the Middle East."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ahwad","description":"Modest fashion brand for Muslim women in Pakistan and the Middle East.","url":"https://ahwad.com","email":"founders.ahwad@gmail.com","sameAs":["https://www.facebook.com/AhwadPk/","https://www.instagram.com/ahwadpk/","https://www.threads.com/@ahwadpk"],"address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"}}</script>
+<link rel="stylesheet" href="style.css"/>
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-  :root {
-    --cream: #F7F2EA;
-    --cream-deep: #EDE5D4;
-    --gold: #B8924A;
-    --gold-light: #D4AA6A;
-    --gold-pale: #F0E0C0;
-    --ink: #1A1510;
-    --ink-soft: #3D3228;
-    --muted: #8C7B68;
-    --blush: #C2907A;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--cream);
-    color: var(--ink);
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    overflow-x: hidden;
-  }
-
-  /* ── NAV ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.4rem 3rem;
-    background: rgba(247,242,234,0.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(184,146,74,0.18);
-  }
-
-  .nav-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.22em;
-    color: var(--ink);
-    text-decoration: none;
-  }
-
-  .nav-arabic {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 1.05rem;
-    color: var(--gold);
-    letter-spacing: 0;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
-  .nav-links a {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .nav-links a:hover { color: var(--gold); }
-
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-  }
-
-  .hero-left {
-    background: var(--cream);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8rem 4rem 4rem 5rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .hero-eyebrow {
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 2.5rem;
-  }
-
-  .hero-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3.2rem, 6vw, 5.2rem);
-    font-weight: 300;
-    line-height: 1.08;
-    color: var(--ink);
-    margin-bottom: 0.4rem;
-  }
-
-  .hero-title em {
-    font-style: italic;
-    color: var(--gold);
-  }
-
-  .hero-arabic-name {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 2.4rem;
-    color: var(--muted);
-    margin-bottom: 2.2rem;
-    display: block;
-    font-weight: 400;
-  }
-
-  .hero-tagline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem;
-    font-style: italic;
-    font-weight: 300;
-    color: var(--ink-soft);
-    margin-bottom: 3rem;
-    line-height: 1.6;
-    max-width: 380px;
-  }
-
-  .hero-tagline span {
-    display: block;
-    font-family: 'Cinzel', serif;
-    font-style: normal;
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-top: 1rem;
-  }
-
-  .hero-cta {
-    display: inline-block;
-    padding: 0.9rem 2.6rem;
-    border: 1px solid var(--gold);
-    font-family: 'Cinzel', serif;
-    font-size: 0.68rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--ink);
-    text-decoration: none;
-    transition: all 0.35s;
-    align-self: flex-start;
-    background: transparent;
-    cursor: pointer;
-  }
-
-  .hero-cta:hover {
-    background: var(--gold);
-    color: var(--cream);
-  }
-
-  .hero-right {
-    position: relative;
-    background: var(--cream-deep);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-pattern {
-    position: absolute;
-    inset: 0;
-    opacity: 0.13;
-  }
-
-  .hero-image-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .silhouette-wrap {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gold-line {
-    width: 1px;
-    height: 80px;
-    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-    margin-bottom: 1.5rem;
-  }
-
-  .placeholder-label {
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    text-align: center;
-  }
-
-  /* Decorative SVG woman silhouette */
-  .silhouette-svg {
-    width: 220px;
-    opacity: 0.55;
-    margin-bottom: 1.5rem;
-  }
-
-  /* ── SECTION GENERAL ── */
-  section { position: relative; }
-
-  .section-label {
-    font-family: 'Cinzel', serif;
-    font-size: 0.62rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .section-label::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 60px;
-    background: var(--gold-light);
-    opacity: 0.5;
-  }
-
-  /* ── ABOUT SECTION ── */
-  .about {
-    padding: 8rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
-    background: var(--cream);
-  }
-
-  .about-text h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
-    font-weight: 300;
-    line-height: 1.18;
-    margin-bottom: 2rem;
-    color: var(--ink);
-  }
-
-  .about-text h2 em {
-    font-style: italic;
-    color: var(--gold);
-  }
-
-  .about-text p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.97rem;
-    line-height: 1.9;
-    color: var(--ink-soft);
-    margin-bottom: 1.4rem;
-    max-width: 480px;
-  }
-
-  .about-quote {
-    border-left: 2px solid var(--gold);
-    padding-left: 1.8rem;
-    margin: 2.8rem 0;
-  }
-
-  .about-quote blockquote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.45rem;
-    font-style: italic;
-    font-weight: 300;
-    color: var(--ink);
-    line-height: 1.5;
-  }
-
-  .about-quote cite {
-    display: block;
-    font-family: 'Cinzel', serif;
-    font-size: 0.62rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-top: 0.8rem;
-    font-style: normal;
-  }
-
-  .about-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .about-card {
-    background: var(--cream-deep);
-    padding: 2.2rem 2.5rem;
-    border: 1px solid rgba(184,146,74,0.2);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .about-card::before {
-    content: attr(data-arabic);
-    position: absolute;
-    top: -0.5rem;
-    right: 1.5rem;
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 4rem;
-    color: var(--gold);
-    opacity: 0.08;
-    line-height: 1;
-  }
-
-  .about-card h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.7rem;
-  }
-
-  .about-card p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.92rem;
-    line-height: 1.75;
-    color: var(--ink-soft);
-  }
-
-  /* ── COLLECTIONS SECTION ── */
-  .collections {
-    padding: 7rem 5rem;
-    background: var(--cream-deep);
-  }
-
-  .collections-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-  }
-
-  .collections-header h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 300;
-    color: var(--ink);
-    line-height: 1.1;
-  }
-
-  .collections-header h2 em {
-    font-style: italic;
-    color: var(--gold);
-  }
-
-  .collections-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .collection-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .collection-img {
-    aspect-ratio: 3/4;
-    background: var(--cream);
-    border: 1px solid rgba(184,146,74,0.15);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease;
-  }
-
-  .collection-item:hover .collection-img {
-    transform: scale(1.02);
-  }
-
-  .collection-img svg {
-    width: 60%;
-    opacity: 0.25;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .collection-pattern {
-    position: absolute;
-    inset: 0;
-    opacity: 0.06;
-  }
-
-  .collection-num {
-    position: absolute;
-    top: 1.2rem;
-    left: 1.2rem;
-    font-family: 'Cinzel', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.25em;
-    color: var(--gold);
-  }
-
-  .collection-arabic {
-    position: absolute;
-    top: 1rem;
-    right: 1.2rem;
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 1.1rem;
-    color: var(--ink);
-    opacity: 0.3;
-  }
-
-  .collection-info {
-    padding: 1.2rem 0.2rem;
-  }
-
-  .collection-info h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: var(--ink);
-    margin-bottom: 0.3rem;
-  }
-
-  .collection-info p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    text-transform: uppercase;
-  }
-
-  /* ── WAITLIST SECTION ── */
-  .waitlist {
-    padding: 8rem 5rem;
-    background: var(--ink);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .waitlist-pattern {
-    position: absolute;
-    inset: 0;
-    opacity: 0.04;
-  }
-
-  .waitlist-arabic {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 3.5rem;
-    color: var(--gold);
-    opacity: 0.2;
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-
-  .waitlist h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 4vw, 3.5rem);
-    font-weight: 300;
-    color: var(--cream);
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .waitlist h2 em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
-
-  .waitlist-sub {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.95rem;
-    color: rgba(247,242,234,0.55);
-    margin-bottom: 3rem;
-    letter-spacing: 0.04em;
-    position: relative;
-    z-index: 2;
-  }
-
-  .waitlist-form {
-    display: flex;
-    gap: 0;
-    max-width: 480px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  }
-
-  .waitlist-form input[type="email"] {
-    flex: 1;
-    padding: 1rem 1.4rem;
-    background: rgba(247,242,234,0.07);
-    border: 1px solid rgba(184,146,74,0.35);
-    border-right: none;
-    color: var(--cream);
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.88rem;
-    letter-spacing: 0.04em;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-
-  .waitlist-form input::placeholder { color: rgba(247,242,234,0.3); }
-  .waitlist-form input:focus { border-color: var(--gold); }
-
-  .waitlist-form button {
-    padding: 1rem 2rem;
-    background: var(--gold);
-    border: 1px solid var(--gold);
-    color: var(--ink);
-    font-family: 'Cinzel', serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .waitlist-form button:hover {
-    background: var(--gold-light);
-    border-color: var(--gold-light);
-  }
-
-  .waitlist-note {
-    margin-top: 1.2rem;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.75rem;
-    color: rgba(247,242,234,0.28);
-    letter-spacing: 0.05em;
-    position: relative;
-    z-index: 2;
-  }
-
-  .success-msg {
-    display: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    color: var(--gold-light);
-    position: relative;
-    z-index: 2;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--ink);
-    border-top: 1px solid rgba(184,146,74,0.12);
-    padding: 2.5rem 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.3em;
-    color: var(--cream);
-    opacity: 0.5;
-  }
-
-  .footer-center {
-    font-family: 'Noto Naskh Arabic', serif;
-    font-size: 1.4rem;
-    color: var(--gold);
-    opacity: 0.3;
-  }
-
-  .footer-right {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    color: rgba(247,242,234,0.22);
-  }
-
-  /* ── DECORATIVE DIVIDER ── */
-  .ornament {
-    text-align: center;
-    padding: 2.5rem 0;
-    background: var(--cream);
-  }
-
-  .ornament svg { width: 120px; opacity: 0.35; }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    nav { padding: 1.2rem 1.8rem; }
-    .nav-links { gap: 1.5rem; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-right { min-height: 55vw; }
-    .hero-left { padding: 7rem 2rem 3rem; }
-    .about { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
-    .collections { padding: 5rem 2rem; }
-    .collections-grid { grid-template-columns: 1fr 1fr; }
-    .collections-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    .waitlist { padding: 5rem 2rem; }
-    footer { padding: 2rem; flex-direction: column; gap: 1rem; text-align: center; }
-  }
-
-  @media (max-width: 600px) {
-    .collections-grid { grid-template-columns: 1fr; }
-    .waitlist-form { flex-direction: column; }
-    .waitlist-form input[type="email"] { border-right: 1px solid rgba(184,146,74,0.35); border-bottom: none; }
-    .nav-links { display: none; }
-  }
-
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(28px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero-eyebrow  { animation: fadeUp 0.8s ease both; }
-  .hero-title    { animation: fadeUp 0.8s 0.15s ease both; }
-  .hero-arabic-name { animation: fadeUp 0.8s 0.25s ease both; }
-  .hero-tagline  { animation: fadeUp 0.8s 0.35s ease both; }
-  .hero-cta      { animation: fadeUp 0.8s 0.5s ease both; }
-
-  @keyframes shimmer {
-    0%, 100% { opacity: 0.55; }
-    50%       { opacity: 0.7; }
-  }
-  .silhouette-svg { animation: shimmer 4s ease-in-out infinite; }
+/* ── LOADER ── */
+#loader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 1rem;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+#loader.gone { opacity: 0; visibility: hidden; }
+.ld-word { display: flex; overflow: hidden; }
+.ld-c {
+  font-family: 'Jost', sans-serif; font-weight: 400;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  letter-spacing: .5em; color: var(--ink);
+  display: inline-block;
+  transform: translateY(100%); opacity: 0;
+}
+.ld-line { width: 0; height: 1px; background: var(--gold); margin-top: .8rem; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100svh;
+  display: flex; align-items: center;
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 7vw, 8rem);
+  background: var(--cream);
+  position: relative;
+}
+
+.hero-content { max-width: 750px; }
+
+.hero-tag {
+  font-family: 'Jost', sans-serif;
+  font-size: .65rem; font-weight: 400;
+  letter-spacing: .3em; text-transform: uppercase;
+  color: var(--gold);
+  display: flex; align-items: center; gap: .8rem;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  opacity: 0; transform: translateY(12px);
+}
+.hero-tag-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%; background: var(--gold);
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.2} }
+
+.hero-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 300; line-height: 1;
+  color: var(--ink);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  overflow: hidden;
+}
+.hero-h1 .line { display: block; overflow: hidden; padding-bottom: .06em; }
+.hero-h1 .inner { display: block; transform: translateY(105%); }
+.hero-h1 em { font-style: italic; color: var(--gold); }
+.hero-h1 .indent { padding-left: clamp(1.5rem, 5vw, 5rem); }
+
+.hero-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+  font-weight: 300; font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  opacity: 0; transform: translateY(14px);
+}
+
+.hero-actions {
+  display: flex; align-items: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+  opacity: 0; transform: translateY(14px);
+}
+
+/* Vertical text on right */
+.hero-side {
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 4rem);
+  top: 50%; transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-family: 'Jost', sans-serif;
+  font-size: .58rem; font-weight: 300;
+  letter-spacing: .25em; text-transform: uppercase;
+  color: var(--ink-muted);
+  opacity: 0;
+}
+
+/* ── SECTION GRID — home page cards ── */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(24,24,24,.1);
+}
+
+.grid-item {
+  display: block;
+  text-decoration: none;
+  padding: clamp(3rem, 6vw, 5.5rem) clamp(1.5rem, 5vw, 5rem);
+  border-right: 1px solid rgba(24,24,24,.1);
+  border-bottom: 1px solid rgba(24,24,24,.1);
+  transition: background .3s;
+  position: relative;
+}
+.grid-item:nth-child(even) { border-right: none; }
+.grid-item:hover { background: var(--cream-dark); }
+
+.grid-item .num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem; font-weight: 300;
+  color: var(--ink); opacity: .08;
+  line-height: 1;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.grid-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 300; color: var(--ink);
+  margin-bottom: .8rem;
+  line-height: 1.2;
+}
+.grid-item p {
+  font-family: 'Jost', sans-serif;
+  font-size: .88rem; font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  max-width: 340px;
+}
+.grid-item .arr {
+  position: absolute;
+  bottom: clamp(1.5rem, 3vw, 2.5rem);
+  right: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: 1.2rem; color: var(--gold);
+  transition: transform .3s;
+}
+.grid-item:hover .arr { transform: translate(3px, -3px); }
+
+/* ── BRAND STATEMENT ── */
+.statement {
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 7vw, 8rem);
+  background: var(--ink);
+}
+.statement-inner { max-width: 800px; }
+.statement blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 300; line-height: 1.35;
+  color: #fff;
+  quotes: none;
+}
+.statement blockquote em { font-style: italic; color: var(--gold-light); }
+.statement cite {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: .62rem; font-weight: 400;
+  letter-spacing: .3em; text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+  margin-top: 2rem;
+  font-style: normal;
+}
+
+@media (max-width: 640px) {
+  .section-grid { grid-template-columns: 1fr; }
+  .grid-item { border-right: none; }
+  .hero-side { display: none; }
+}
 </style>
 </head>
 <body>
 
-<!-- ── NAVIGATION ── -->
-<nav>
-  <a class="nav-logo" href="#">AHWAD <span class="nav-arabic">أحود</span></a>
-  <ul class="nav-links">
-    <li><a href="#about">Our Story</a></li>
-    <li><a href="#collections">Collections</a></li>
-    <li><a href="#waitlist">Notify Me</a></li>
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-word">
+    <span class="ld-c" id="c0">A</span>
+    <span class="ld-c" id="c1">H</span>
+    <span class="ld-c" id="c2">W</span>
+    <span class="ld-c" id="c3">A</span>
+    <span class="ld-c" id="c4">D</span>
+  </div>
+  <div class="ld-line" id="ll"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="n-logo" href="index.html">AHWAD</a>
+  <ul class="n-links" role="list">
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
   </ul>
+  <a class="n-cta" href="waitlist.html">Notify Me</a>
+  <button class="n-hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- ── HERO ── -->
+<!-- MOBILE MENU -->
+<div id="mob" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="about.html" onclick="closeMob()">Our Story</a>
+  <a href="collections.html" onclick="closeMob()">Collections</a>
+  <a href="philosophy.html" onclick="closeMob()">Philosophy</a>
+  <a href="privacy.html" onclick="closeMob()">Privacy</a>
+  <a href="waitlist.html" onclick="closeMob()" class="mob-cta">Notify Me</a>
+</div>
+
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Modest Fashion — Islamabad · Karachi · Dubai · Riyadh</p>
-
-    <h1 class="hero-title">
-      The art<br/>of being <em>seen.</em>
-    </h1>
-
-    <span class="hero-arabic-name">أحود</span>
-
-    <p class="hero-tagline">
-      For the woman who moves through the world with grace — dressed not to seek attention, but impossible to ignore.
-      <span>Launching Soon</span>
+  <div class="hero-content">
+    <p class="hero-tag" id="htag">
+      <span class="hero-tag-dot" aria-hidden="true"></span>
+      Modest Fashion · Pakistan &amp; Middle East · Launching Soon
     </p>
-
-    <a class="hero-cta" href="#waitlist">Join the Waitlist</a>
-  </div>
-
-  <div class="hero-right">
-    <!-- Geometric Islamic pattern background -->
-    <svg class="hero-pattern" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <pattern id="islamic" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-          <g fill="none" stroke="#B8924A" stroke-width="0.8">
-            <polygon points="40,2 72,20 72,60 40,78 8,60 8,20"/>
-            <polygon points="40,12 62,24 62,56 40,68 18,56 18,24"/>
-            <circle cx="40" cy="40" r="10"/>
-            <line x1="40" y1="2" x2="40" y2="12"/>
-            <line x1="40" y1="68" x2="40" y2="78"/>
-            <line x1="8" y1="20" x2="18" y2="24"/>
-            <line x1="72" y1="20" x2="62" y2="24"/>
-            <line x1="8" y1="60" x2="18" y2="56"/>
-            <line x1="72" y1="60" x2="62" y2="56"/>
-          </g>
-        </pattern>
-      </defs>
-      <rect width="400" height="400" fill="url(#islamic)"/>
-    </svg>
-
-    <!-- Stylised abaya silhouette -->
-    <div class="silhouette-wrap">
-      <div class="gold-line"></div>
-      <svg class="silhouette-svg" viewBox="0 0 200 420" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <!-- head/hijab -->
-        <ellipse cx="100" cy="42" rx="26" ry="30" fill="#B8924A" opacity="0.6"/>
-        <path d="M74 42 Q60 90 55 130 Q50 180 48 220" stroke="#B8924A" stroke-width="1.5" fill="none"/>
-        <path d="M126 42 Q140 90 145 130 Q150 180 152 220" stroke="#B8924A" stroke-width="1.5" fill="none"/>
-        <!-- hijab wrap -->
-        <path d="M74 55 Q65 80 62 110 Q72 95 85 88 Q100 84 115 88 Q128 95 138 110 Q135 80 126 55 Q113 70 100 72 Q87 70 74 55Z" fill="#B8924A" opacity="0.45"/>
-        <!-- body / abaya -->
-        <path d="M80 112 Q68 160 60 210 Q50 270 45 340 Q60 355 100 360 Q140 355 155 340 Q150 270 140 210 Q132 160 120 112 Q110 105 100 104 Q90 105 80 112Z" fill="#B8924A" opacity="0.38"/>
-        <!-- sleeve lines -->
-        <path d="M80 120 Q55 155 42 195" stroke="#B8924A" stroke-width="1.2" fill="none" opacity="0.5"/>
-        <path d="M120 120 Q145 155 158 195" stroke="#B8924A" stroke-width="1.2" fill="none" opacity="0.5"/>
-        <!-- hem detail -->
-        <path d="M45 340 Q72 368 100 370 Q128 368 155 340" stroke="#B8924A" stroke-width="0.8" fill="none" opacity="0.4"/>
-        <!-- embroidery detail at neckline -->
-        <circle cx="100" cy="116" r="3" fill="#B8924A" opacity="0.5"/>
-        <circle cx="92" cy="114" r="1.5" fill="#B8924A" opacity="0.4"/>
-        <circle cx="108" cy="114" r="1.5" fill="#B8924A" opacity="0.4"/>
-      </svg>
-      <p class="placeholder-label">Campaign imagery<br/>coming soon</p>
-      <div class="gold-line" style="margin-top: 1.5rem; margin-bottom: 0;"></div>
+    <h1 class="hero-h1" id="hh1">
+      <span class="line"><span class="inner" id="h0">The art</span></span>
+      <span class="line"><span class="inner indent" id="h1">of being <em>seen.</em></span></span>
+    </h1>
+    <p class="hero-desc" id="hdesc">
+      For the Muslim woman who moves through the world with intention — dressed not to seek attention, but impossible to ignore.
+    </p>
+    <div class="hero-actions" id="hact">
+      <a href="waitlist.html" class="btn btn-dark">Join the Waitlist</a>
+      <a href="about.html" class="btn btn-ghost">Our Story</a>
     </div>
   </div>
+  <p class="hero-side" id="hside" aria-hidden="true">Ahwad · The Art of Being Seen</p>
 </section>
 
-<!-- ── ORNAMENT ── -->
-<div class="ornament">
-  <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-    <line x1="0" y1="10" x2="45" y2="10" stroke="#B8924A" stroke-width="0.7" opacity="0.5"/>
-    <circle cx="60" cy="10" r="3" fill="#B8924A" opacity="0.6"/>
-    <circle cx="52" cy="10" r="1.5" fill="#B8924A" opacity="0.35"/>
-    <circle cx="68" cy="10" r="1.5" fill="#B8924A" opacity="0.35"/>
-    <line x1="75" y1="10" x2="120" y2="10" stroke="#B8924A" stroke-width="0.7" opacity="0.5"/>
-  </svg>
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-inner">
+    <span>Modest</span><span class="sep">—</span>
+    <span>Formal</span><span class="sep">—</span>
+    <span>Elegant</span><span class="sep">—</span>
+    <span>Ahwad</span><span class="sep">—</span>
+    <span>Faith-Centred</span><span class="sep">—</span>
+    <span>Graceful</span><span class="sep">—</span>
+    <span>Pakistan</span><span class="sep">—</span>
+    <span>Middle East</span><span class="sep">—</span>
+    <span>Modest</span><span class="sep">—</span>
+    <span>Formal</span><span class="sep">—</span>
+    <span>Elegant</span><span class="sep">—</span>
+    <span>Ahwad</span><span class="sep">—</span>
+    <span>Faith-Centred</span><span class="sep">—</span>
+    <span>Graceful</span><span class="sep">—</span>
+    <span>Pakistan</span><span class="sep">—</span>
+    <span>Middle East</span><span class="sep">—</span>
+  </div>
 </div>
 
-<!-- ── ABOUT ── -->
-<section class="about" id="about">
-  <div class="about-text">
-    <p class="section-label">Our Story</p>
-    <h2>Rooted in heritage.<br/><em>Made for her world.</em></h2>
-
-    <p>Ahwad was born from a simple truth: the modern Muslim woman has never needed to choose between her faith and her ambition. She walks into boardrooms, manages families, leads communities — and she does all of it with an effortless grace that no other garment captures quite like the abaya.</p>
-
-    <p>We design modest formal wear for working women in Pakistan and the Middle East — pieces that honour the poetry of Arabic heritage while meeting the demands of a modern professional life.</p>
-
-    <div class="about-quote">
-      <blockquote>She does not dress to be seen. She simply cannot be ignored.</blockquote>
-      <cite>The Ahwad Woman</cite>
-    </div>
-
-    <p>The name Ahwad (أحود) is Arabic for a woman with beautiful dark eyes — a quality celebrated in classical poetry as the mark of quiet, composed strength. We carry that meaning into every thread.</p>
-  </div>
-
-  <div class="about-visual">
-    <div class="about-card" data-arabic="عباءة">
-      <h3>The Abaya</h3>
-      <p>Structured silhouettes in premium fabrics — designed to move with confidence from morning meetings to evening gatherings. Every line intentional. Every detail considered.</p>
-    </div>
-    <div class="about-card" data-arabic="حجاب">
-      <h3>Formal Hijab</h3>
-      <p>Curated drape styles crafted in crepe, chiffon, and matte satin — for the woman who wants her covering to be as polished as the rest of her presentation.</p>
-    </div>
-    <div class="about-card" data-arabic="أناقة">
-      <h3>Modest Occasions</h3>
-      <p>From corporate presentations to celebratory dinners — occasion pieces designed with the Pakistani and Middle Eastern wardrobe in mind, bridging both cultural aesthetics.</p>
-    </div>
-  </div>
+<!-- GRID -->
+<section class="section-grid" aria-label="Explore Ahwad">
+  <a class="grid-item rv" href="about.html" aria-label="Read our story">
+    <span class="num" aria-hidden="true">01</span>
+    <h3>Our Story</h3>
+    <p>The name, the woman, the belief that modest dressing is not a limitation — it is a language.</p>
+    <span class="arr" aria-hidden="true">↗</span>
+  </a>
+  <a class="grid-item rv d1" href="collections.html" aria-label="View our collections">
+    <span class="num" aria-hidden="true">02</span>
+    <h3>Collections</h3>
+    <p>Three expressions of modest formal dressing — for the office, the occasion, and every day.</p>
+    <span class="arr" aria-hidden="true">↗</span>
+  </a>
+  <a class="grid-item rv d2" href="philosophy.html" aria-label="Our design philosophy">
+    <span class="num" aria-hidden="true">03</span>
+    <h3>Philosophy</h3>
+    <p>Four principles that govern every silhouette, fabric, and design choice we make.</p>
+    <span class="arr" aria-hidden="true">↗</span>
+  </a>
+  <a class="grid-item rv d3" href="waitlist.html" aria-label="Join the waitlist">
+    <span class="num" aria-hidden="true">04</span>
+    <h3>Notify Me</h3>
+    <p>First access to collections, early pricing, and behind-the-scenes previews.</p>
+    <span class="arr" aria-hidden="true">↗</span>
+  </a>
 </section>
 
-<!-- ── ORNAMENT ── -->
-<div class="ornament" style="background: var(--cream-deep);">
-  <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-    <line x1="0" y1="10" x2="45" y2="10" stroke="#B8924A" stroke-width="0.7" opacity="0.5"/>
-    <circle cx="60" cy="10" r="3" fill="#B8924A" opacity="0.6"/>
-    <circle cx="52" cy="10" r="1.5" fill="#B8924A" opacity="0.35"/>
-    <circle cx="68" cy="10" r="1.5" fill="#B8924A" opacity="0.35"/>
-    <line x1="75" y1="10" x2="120" y2="10" stroke="#B8924A" stroke-width="0.7" opacity="0.5"/>
-  </svg>
+<!-- BRAND STATEMENT -->
+<div class="statement">
+  <div class="statement-inner rv">
+    <blockquote>
+      She doesn't dress to impress.<br/>
+      She dresses to express — a faith,<br/>
+      a culture, a self that needs<br/>
+      <em>no compromise.</em>
+    </blockquote>
+    <cite>The Ahwad Woman</cite>
+  </div>
 </div>
 
-<!-- ── COLLECTIONS ── -->
-<section class="collections" id="collections">
-  <div class="collections-header">
-    <div>
-      <p class="section-label">Coming Soon</p>
-      <h2>Our first<br/><em>collections</em></h2>
-    </div>
-    <p style="font-family:'Jost',sans-serif; font-weight:300; font-size:0.85rem; color:var(--muted); max-width:240px; text-align:right; line-height:1.7;">Launching exclusively online — designed for Pakistan, available across the Middle East.</p>
-  </div>
-
-  <div class="collections-grid">
-    <div class="collection-item">
-      <div class="collection-img">
-        <svg class="collection-pattern" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <defs><pattern id="p1" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="20" cy="20" r="8" fill="none" stroke="#B8924A" stroke-width="0.6"/>
-            <line x1="20" y1="0" x2="20" y2="40" stroke="#B8924A" stroke-width="0.3" opacity="0.5"/>
-            <line x1="0" y1="20" x2="40" y2="20" stroke="#B8924A" stroke-width="0.3" opacity="0.5"/>
-          </pattern></defs>
-          <rect width="200" height="300" fill="url(#p1)"/>
-        </svg>
-        <span class="collection-num">01</span>
-        <span class="collection-arabic">العمل</span>
-        <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <ellipse cx="50" cy="22" rx="14" ry="16" fill="#B8924A"/>
-          <path d="M36 36 Q28 70 26 110 Q24 150 22 185 Q35 195 50 197 Q65 195 78 185 Q76 150 74 110 Q72 70 64 36Z" fill="#B8924A"/>
-        </svg>
-      </div>
-      <div class="collection-info">
-        <h3>The Professional</h3>
-        <p>Abayas for the workplace</p>
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="f-name" href="index.html">AHWAD</a>
+      <span class="f-tag">The Art of Being Seen.</span>
+      <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the Middle East and beyond.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Ahwad on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook
+        </a>
+        <a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Ahwad on Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram
+        </a>
+        <a href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Ahwad on Threads">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads
+        </a>
+        <a class="dim" href="#" aria-label="TikTok — coming soon">
+          <!-- TIKTOK: swap href="#" for your TikTok URL when ready -->
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok
+        </a>
       </div>
     </div>
-
-    <div class="collection-item">
-      <div class="collection-img" style="background: #EDE5D4;">
-        <svg class="collection-pattern" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <defs><pattern id="p2" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
-            <polygon points="25,3 47,14 47,36 25,47 3,36 3,14" fill="none" stroke="#B8924A" stroke-width="0.6"/>
-          </pattern></defs>
-          <rect width="200" height="300" fill="url(#p2)"/>
-        </svg>
-        <span class="collection-num">02</span>
-        <span class="collection-arabic">الإبداع</span>
-        <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <ellipse cx="50" cy="22" rx="14" ry="16" fill="#B8924A" opacity="0.8"/>
-          <path d="M36 36 Q20 80 18 130 Q16 165 14 185 Q35 200 50 200 Q65 200 86 185 Q84 165 82 130 Q80 80 64 36Z" fill="#B8924A" opacity="0.8"/>
-        </svg>
-      </div>
-      <div class="collection-info">
-        <h3>The Occasion</h3>
-        <p>Evening & formal gatherings</p>
-      </div>
+    <nav class="footer-col" aria-label="Footer navigation">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="waitlist.html">Join Waitlist</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="collections.html">The Office</a></li>
+        <li><a href="collections.html">The Occasion</a></li>
+        <li><a href="collections.html">Everyday Grace</a></li>
+      </ul>
     </div>
-
-    <div class="collection-item">
-      <div class="collection-img" style="background: #F2EBE0;">
-        <svg class="collection-pattern" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <defs><pattern id="p3" x="0" y="0" width="35" height="35" patternUnits="userSpaceOnUse">
-            <rect x="5" y="5" width="25" height="25" fill="none" stroke="#B8924A" stroke-width="0.5" rx="2"/>
-            <rect x="12" y="12" width="11" height="11" fill="none" stroke="#B8924A" stroke-width="0.4" rx="1"/>
-          </pattern></defs>
-          <rect width="200" height="300" fill="url(#p3)"/>
-        </svg>
-        <span class="collection-num">03</span>
-        <span class="collection-arabic">الحجاب</span>
-        <svg viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <ellipse cx="50" cy="35" rx="22" ry="26" fill="#B8924A" opacity="0.7"/>
-          <path d="M28 48 Q15 90 18 140 Q35 155 50 156 Q65 155 82 140 Q85 90 72 48 Q61 60 50 62 Q39 60 28 48Z" fill="#B8924A" opacity="0.5"/>
-        </svg>
-      </div>
-      <div class="collection-info">
-        <h3>The Hijab Edit</h3>
-        <p>Formal drape styles</p>
-      </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">@ahwadpk</a></li>
+        <li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li>
+        <li><a href="about.html">Islamabad, Pakistan</a></li>
+      </ul>
     </div>
   </div>
-</section>
-
-<!-- ── WAITLIST ── -->
-<section class="waitlist" id="waitlist">
-  <svg class="waitlist-pattern" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;">
-    <defs><pattern id="wlp" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-      <polygon points="40,2 72,20 72,60 40,78 8,60 8,20" fill="none" stroke="#C9A84C" stroke-width="0.7"/>
-    </pattern></defs>
-    <rect width="600" height="500" fill="url(#wlp)"/>
-  </svg>
-
-  <span class="waitlist-arabic">أحود</span>
-
-  <p class="section-label" style="justify-content:center; color:var(--gold-light);">Be the First</p>
-
-  <h2>The launch is <em>coming.</em><br/>Your wardrobe is ready.</h2>
-
-  <p class="waitlist-sub">Join our private list — first access, early pricing, and previews before anyone else.</p>
-
-  <div class="waitlist-form" id="wl-form">
-    <input type="email" id="email-input" placeholder="your@email.com" autocomplete="email"/>
-    <button onclick="handleWaitlist()">Notify Me</button>
+  <div class="footer-bottom">
+    <p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p>
+    <a href="privacy.html">Privacy Policy</a>
   </div>
-
-  <p class="waitlist-note">We respect your privacy. No spam, only what matters.</p>
-
-  <p class="success-msg" id="success-msg">
-    Thank you — we'll be in touch. &nbsp; <span style="font-family:'Noto Naskh Arabic',serif; font-size:1.5rem; vertical-align:middle;">شكراً</span>
-  </p>
-</section>
-
-<!-- ── FOOTER ── -->
-<footer>
-  <span class="footer-logo">AHWAD</span>
-  <span class="footer-center">أحود</span>
-  <span class="footer-right">© 2025 Ahwad. All rights reserved.</span>
 </footer>
 
 <script>
-  function handleWaitlist() {
-    const input = document.getElementById('email-input');
-    const form = document.getElementById('wl-form');
-    const note = document.querySelector('.waitlist-note');
-    const success = document.getElementById('success-msg');
-    const val = input.value.trim();
-    if (!val || !val.includes('@')) {
-      input.style.borderColor = 'rgba(194,144,122,0.7)';
-      return;
-    }
-    form.style.display = 'none';
-    note.style.display = 'none';
-    success.style.display = 'block';
-  }
-
-  document.getElementById('email-input').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') handleWaitlist();
+/* ── LOADER ── */
+(function () {
+  var chars = ['c0','c1','c2','c3','c4'];
+  chars.forEach(function (id, i) {
+    setTimeout(function () {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.style.transition = 'transform .55s cubic-bezier(.33,1,.68,1), opacity .55s';
+      el.style.transform = 'translateY(0)';
+      el.style.opacity = '1';
+    }, 150 + i * 65);
   });
+  setTimeout(function () {
+    var ll = document.getElementById('ll');
+    if (ll) { ll.style.transition = 'width .8s ease'; ll.style.width = '80px'; }
+  }, 520);
+  var launched = false;
+  function launch() {
+    if (launched) return; launched = true;
+    var ld = document.getElementById('loader');
+    if (ld) ld.classList.add('gone');
+    /* hero entrance */
+    function show(id, delay, extra) {
+      setTimeout(function () {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.style.transition = 'opacity .7s ease, transform .7s ease';
+        Object.assign(el.style, { opacity: '1', transform: 'translateY(0)' });
+        if (extra) Object.assign(el.style, extra);
+      }, delay);
+    }
+    show('htag', 80);
+    setTimeout(function () {
+      ['h0','h1'].forEach(function (id, i) {
+        setTimeout(function () {
+          var el = document.getElementById(id);
+          if (!el) return;
+          el.style.transition = 'transform .85s cubic-bezier(.33,1,.68,1)';
+          el.style.transform = 'translateY(0)';
+        }, i * 120);
+      });
+    }, 200);
+    show('hdesc', 500);
+    show('hact', 650);
+    show('hside', 900);
+  }
+  window.addEventListener('load', function () { setTimeout(launch, 1300); });
+  setTimeout(launch, 2800);
+})();
 </script>
+<script src="nav.js"></script>
 </body>
 </html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Collections — Ahwad Modest Fashion | Pakistan &amp; Middle East</title>
+<meta name="description" content="Ahwad's modest fashion collections — The Office, The Occasion, and Everyday Grace. Formal modest workwear, celebration wear, and daily modest clothing for Muslim women."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://ahwad.com/collections.html"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.col-body { background: var(--cream); }
+
+.col-intro {
+  padding: clamp(4rem,8vw,9rem) clamp(1.5rem,7vw,8rem) clamp(2rem,4vw,4rem);
+  max-width: 700px;
+}
+.col-intro h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem,3.5vw,3rem);
+  font-weight: 300; line-height: 1.2;
+  color: var(--ink); margin-top: 1rem;
+}
+.col-intro h2 em { font-style: italic; color: var(--gold); }
+.col-intro p {
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(.88rem,1.2vw,.96rem);
+  font-weight: 300; line-height: 2;
+  color: var(--ink-soft); margin-top: 1.2rem;
+}
+
+/* Full-width alternating collection rows */
+.col-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(24,24,24,.1);
+}
+.col-row.flip { direction: rtl; }
+.col-row.flip > * { direction: ltr; }
+
+.col-visual {
+  aspect-ratio: 4/3;
+  background: var(--cream-dark);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.col-visual svg.fig {
+  width: 35%; opacity: .18;
+  transition: opacity .5s, transform .5s;
+}
+.col-row:hover .col-visual svg.fig { opacity: .3; transform: scale(1.04); }
+.col-visual .col-num {
+  position: absolute; top: 1.5rem; left: 1.5rem;
+  font-family: 'Jost', sans-serif;
+  font-size: .58rem; font-weight: 400;
+  letter-spacing: .28em; color: var(--ink-muted);
+}
+
+.col-text {
+  padding: clamp(3rem,6vw,6rem) clamp(1.5rem,5vw,5rem);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.col-text h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem,3.5vw,3.2rem);
+  font-weight: 300; line-height: 1.1;
+  color: var(--ink); margin-bottom: 1.5rem;
+}
+.col-text h2 em { font-style: italic; color: var(--gold); }
+.col-text p {
+  font-family: 'Jost', sans-serif;
+  font-size: clamp(.88rem,1.1vw,.96rem);
+  font-weight: 300; line-height: 2;
+  color: var(--ink-soft); margin-bottom: 1.2rem;
+}
+.col-tags {
+  display: flex; flex-wrap: wrap; gap: .4rem;
+  margin-bottom: 2rem;
+}
+.col-tag {
+  font-family: 'Jost', sans-serif;
+  font-size: .6rem; font-weight: 300;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-muted);
+  border: 1px solid rgba(24,24,24,.18);
+  padding: .28rem .7rem;
+}
+.col-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: .95rem;
+  color: var(--ink-muted);
+  border-left: 2px solid var(--gold);
+  padding-left: .9rem;
+  line-height: 1.6;
+}
+.col-note a { color: var(--gold); text-decoration: none; }
+.col-note a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .col-row, .col-row.flip { grid-template-columns: 1fr; direction: ltr; }
+  .col-visual { aspect-ratio: 16/9; }
+}
+</style>
+</head>
+<body>
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="n-logo" href="index.html">AHWAD</a>
+  <ul class="n-links" role="list">
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <a class="n-cta" href="waitlist.html">Notify Me</a>
+  <button class="n-hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="mob" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="about.html" onclick="closeMob()">Our Story</a>
+  <a href="collections.html" onclick="closeMob()">Collections</a>
+  <a href="philosophy.html" onclick="closeMob()">Philosophy</a>
+  <a href="privacy.html" onclick="closeMob()">Privacy</a>
+  <a href="waitlist.html" onclick="closeMob()" class="mob-cta">Notify Me</a>
+</div>
+<header class="page-header">
+  <span class="eyebrow">Collections</span>
+  <h1>Our opening<br/><em>collections.</em></h1>
+  <p>Three expressions of modest formal dressing — designed for every chapter of a Muslim woman's day.</p>
+</header>
+<div class="marquee" aria-hidden="true"><div class="marquee-inner"><span>The Office</span><span class="sep">—</span><span>The Occasion</span><span class="sep">—</span><span>Everyday Grace</span><span class="sep">—</span><span>Modest Fashion</span><span class="sep">—</span><span>Launching Soon</span><span class="sep">—</span><span>The Office</span><span class="sep">—</span><span>The Occasion</span><span class="sep">—</span><span>Everyday Grace</span><span class="sep">—</span><span>Modest Fashion</span><span class="sep">—</span><span>Launching Soon</span><span class="sep">—</span></div></div>
+<main class="col-body">
+  <div class="col-intro rv">
+    <span class="eyebrow">Coming Soon</span>
+    <h2>Modest clothing for<br/><em>every chapter of her day.</em></h2>
+    <p>Each collection is built around a moment in a Muslim woman's life. One wardrobe philosophy, three distinct expressions — all built on the same foundation of faith-first design.</p>
+  </div>
+
+  <article class="col-row rv" aria-labelledby="c1h">
+    <div class="col-visual">
+      <span class="col-num">01</span>
+      <svg class="fig" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="50" cy="24" rx="16" ry="20" stroke="#181818" stroke-width="1.2"/>
+        <path d="M34 40 Q24 80 22 130 Q20 165 18 192 Q35 202 50 204 Q65 202 82 192 Q80 165 78 130 Q76 80 66 40" stroke="#181818" stroke-width="1.2"/>
+        <path d="M34 48 Q16 88 10 128" stroke="#181818" stroke-width="1" opacity=".6"/>
+        <path d="M66 48 Q84 88 90 128" stroke="#181818" stroke-width="1" opacity=".6"/>
+      </svg>
+    </div>
+    <div class="col-text">
+      <span class="eyebrow">Collection One</span>
+      <h2 id="c1h">The <em>Office</em></h2>
+      <p>Structured modest formal wear for the Muslim professional woman. Clean silhouettes, premium fabrics, and fully covered cuts that command a room without compromise.</p>
+      <p>Designed for boardrooms, client meetings, and long working days — pieces that carry the weight of ambition without ever compromising your deen or your dignity.</p>
+      <div class="col-tags">
+        <span class="col-tag">Formal Modest Wear</span>
+        <span class="col-tag">Workwear</span>
+        <span class="col-tag">Full Coverage</span>
+      </div>
+      <p class="col-note">Launching soon — <a href="waitlist.html">join the waitlist</a> for early access.</p>
+    </div>
+  </article>
+
+  <article class="col-row flip rv d1" aria-labelledby="c2h">
+    <div class="col-visual" style="background:#E8E0CC">
+      <span class="col-num">02</span>
+      <svg class="fig" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="50" cy="22" rx="16" ry="20" stroke="#181818" stroke-width="1.2"/>
+        <path d="M34 38 Q18 82 16 138 Q14 172 12 194 Q35 207 50 209 Q65 207 88 194 Q86 172 84 138 Q82 82 66 38" stroke="#181818" stroke-width="1.2"/>
+        <path d="M34 46 Q14 92 8 138" stroke="#181818" stroke-width="1" opacity=".6"/>
+        <path d="M66 46 Q86 92 92 138" stroke="#181818" stroke-width="1" opacity=".6"/>
+        <path d="M40 38 Q45 28 50 26 Q55 28 60 38" stroke="#9A7B2E" stroke-width="1" opacity=".6"/>
+      </svg>
+    </div>
+    <div class="col-text">
+      <span class="eyebrow">Collection Two</span>
+      <h2 id="c2h">The <em>Occasion</em></h2>
+      <p>Elevated modest fashion for weddings, Eid gatherings, and formal family events. Luxe fabrics with considered embellishment — dignified, never diminished.</p>
+      <p>For the Muslim woman who celebrates life's most beautiful moments in clothing that reflects both her culture and her faith, without apologising for either.</p>
+      <div class="col-tags">
+        <span class="col-tag">Modest Occasion Wear</span>
+        <span class="col-tag">Eid Wear</span>
+        <span class="col-tag">Wedding Guest</span>
+      </div>
+      <p class="col-note">Launching soon — <a href="waitlist.html">join the waitlist</a> for early access.</p>
+    </div>
+  </article>
+
+  <article class="col-row rv d2" aria-labelledby="c3h">
+    <div class="col-visual" style="background:#DDD6C4">
+      <span class="col-num">03</span>
+      <svg class="fig" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="50" cy="26" rx="18" ry="22" stroke="#181818" stroke-width="1.2"/>
+        <path d="M32 44 Q28 68 26 100 Q22 130 26 158 Q38 170 50 172 Q62 170 74 158 Q78 130 74 100 Q72 68 68 44 Q59 56 50 58 Q41 56 32 44" stroke="#181818" stroke-width="1.2"/>
+        <path d="M32 52 Q16 84 12 118" stroke="#181818" stroke-width="1" opacity=".5"/>
+        <path d="M68 52 Q84 84 88 118" stroke="#181818" stroke-width="1" opacity=".5"/>
+      </svg>
+    </div>
+    <div class="col-text">
+      <span class="eyebrow">Collection Three</span>
+      <h2 id="c3h">Everyday <em>Grace</em></h2>
+      <p>Modest daily clothing that meets a Muslim woman's life with ease. Breathable fabrics and relaxed-but-polished silhouettes for university, casual meetings, and everything between.</p>
+      <p>Coverage that never feels like a concession. Comfort that never reads as casual. The every day, elevated.</p>
+      <div class="col-tags">
+        <span class="col-tag">Modest Daily Wear</span>
+        <span class="col-tag">Hijab-Friendly</span>
+        <span class="col-tag">Everyday</span>
+      </div>
+      <p class="col-note">Launching soon — <a href="waitlist.html">join the waitlist</a> for early access.</p>
+    </div>
+  </article>
+</main>
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="f-name" href="index.html">AHWAD</a>
+      <span class="f-tag">The Art of Being Seen.</span>
+      <p>Modest clothing for the Muslim working woman. Rooted in Pakistan. Reaching the world.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+        <a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>Instagram</a>
+        <a href="https://www.threads.com/@ahwadpk" rel="noopener noreferrer" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Threads</a>
+        <a class="dim" href="#" aria-label="TikTok coming soon"><!-- TIKTOK: swap href="#" for your URL --><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok</a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Footer navigation"><h4>Navigate</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="collections.html">Collections</a></li><li><a href="philosophy.html">Philosophy</a></li><li><a href="waitlist.html">Join Waitlist</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></nav>
+    <div class="footer-col"><h4>Collections</h4><ul><li><a href="collections.html">The Office</a></li><li><a href="collections.html">The Occasion</a></li><li><a href="collections.html">Everyday Grace</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:founders.ahwad@gmail.com">founders.ahwad@gmail.com</a></li><li><a href="https://www.instagram.com/ahwadpk/" rel="noopener noreferrer" target="_blank">@ahwadpk</a></li><li><a href="https://www.facebook.com/AhwadPk/" rel="noopener noreferrer" target="_blank">facebook.com/AhwadPk</a></li><li><a href="about.html">Islamabad, Pakistan</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p><a href="privacy.html">Privacy Policy</a></div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>
