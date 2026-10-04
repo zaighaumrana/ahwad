@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Ahwad — Modest Clothing for Muslim Women | Pakistan &amp; Middle East</title>
-<meta name="description" content="Ahwad is a modest fashion brand for Muslim working women in Pakistan and the Middle East. Elegant modest clothing, formal hijab styles, and occasion wear that honours your faith."/>
+<meta name="description" content="Ahwad is a modest fashion brand for Muslim working women in Pakistan and the Middle East. Elegant modest clothing, formal hijab styles, and occasion wear that honours[...]
 <meta name="keywords" content="modest fashion Pakistan, modest clothing Muslim women, Islamic formal wear, hijab fashion, modest workwear, halal fashion"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://ahwad.com/"/>
@@ -13,7 +13,7 @@
 <meta property="og:title" content="Ahwad — Modest Clothing for Muslim Women"/>
 <meta property="og:description" content="Elegant modest fashion for the Muslim working woman in Pakistan and the Middle East."/>
 <meta name="twitter:card" content="summary_large_image"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ahwad","description":"Modest fashion brand for Muslim women in Pakistan and the Middle East.","url":"https://ahwad.com","email":"founders.ahwad@gmail.com","sameAs":["https://www.facebook.com/AhwadPk/","https://www.instagram.com/ahwadpk/","https://www.threads.com/@ahwadpk"],"address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ahwad","description":"Modest fashion brand for Muslim women in Pakistan and the Middle East.","url":[...]
 <link rel="stylesheet" href="style.css"/>
 <style>
 /* ── LOADER ── */
@@ -329,7 +329,7 @@
         </a>
         <a class="dim" href="#" aria-label="TikTok — coming soon">
           <!-- TIKTOK: swap href="#" for your TikTok URL when ready -->
-          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.18 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>TikTok
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.77 0 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 104.55 6.09V8.69a8.18 8.[...]
         </a>
       </div>
     </div>
@@ -362,12 +362,15 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Ahwad. All rights reserved. Modest fashion for Muslim women.</p>
+    <p>© <span id="year"></span> Ahwad. All rights reserved. Modest fashion for Muslim women. A Project of <a href="https://www.abcdventureslimited.com" rel="noopener noreferrer" target="_blank">ABCD Ventures</a></p>
     <a href="privacy.html">Privacy Policy</a>
   </div>
 </footer>
 
 <script>
+// Auto-update year
+document.getElementById('year').textContent = new Date().getFullYear();
+
 /* ── LOADER ── */
 (function () {
   var chars = ['c0','c1','c2','c3','c4'];
