@@ -1,4 +1,8 @@
 (function () {
+  /* Footer year on every page */
+  var year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+
   /* Nav scroll shadow */
   var nav = document.getElementById('nav');
   window.addEventListener('scroll', function () {
